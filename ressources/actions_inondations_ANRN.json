@@ -1,0 +1,344 @@
+[
+    {
+        "nom": "Conna\u00eetre",
+        "code": 1,
+        "enfants": [
+            {
+                "nom": "Avant",
+                "code": 2,
+                "enfants": [
+                    {
+                        "nom": "Connaissance",
+                        "code": 3,
+                        "enfants": [
+                            {
+                                "nom": "Ph\u00e9nom\u00e8nes",
+                                "code": 4,
+                                "enfants": [
+                                    {
+                                        "nom": "Recherche et collecte d\u2019\u00e9l\u00e9ments historiques",
+                                        "code": 5,
+                                        "sujet": "Ph\u00e9nom\u00e8nes d\u2019inondation ou d\u2019\u00e9rosion ",
+                                        "comm": "T\u00e9moignages, PHE, photographies, documents\u2026"
+                                    },
+                                    {
+                                        "nom": "Collecte / synth\u00e8se d\u2019\u00e9tudes existantes",
+                                        "code": 6,
+                                        "sujet": "Ph\u00e9nom\u00e8nes d\u2019inondation ou d\u2019\u00e9rosion ",
+                                        "comm": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "nom": "Tous enjeux",
+                                "code": 7,
+                                "enfants": [
+                                    {
+                                        "nom": "Identification et caract\u00e9risation des enjeux et de leur vuln\u00e9rabilit\u00e9 ",
+                                        "code": 8,
+                                        "sujet": "Exposition et vuln\u00e9rabilit\u00e9",
+                                        "comm": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "nom": "Enjeux anthropiques",
+                                "code": 9,
+                                "enfants": [
+                                    {
+                                        "nom": "Identification et caract\u00e9risation des ouvrages de protection",
+                                        "code": 10,
+                                        "sujet": "\u00c9tude de danger",
+                                        "comm": "Niveaux de protection et zones prot\u00e9g\u00e9es"
+                                    }
+                                ]
+                            },
+                            {
+                                "nom": "Enjeux humains",
+                                "code": 11,
+                                "enfants": [
+                                    {
+                                        "nom": "Connaissance du niveau de sensibilisation",
+                                        "code": 12,
+                                        "sujet": "Populations",
+                                        "comm": "Pour diff\u00e9rents types de publics"
+                                    }
+                                ]
+                            },
+                            {
+                                "nom": "Risques",
+                                "code": 13,
+                                "enfants": [
+                                    {
+                                        "nom": "Croisement des al\u00e9as et des enjeux",
+                                        "code": 14,
+                                        "sujet": "Risques (al\u00e9a + enjeux)",
+                                        "comm": "Par ex calcul d\u2019indicateurs"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Pr\u00e9vision",
+                        "code": 15,
+                        "enfants": [
+                            {
+                                "nom": "Ph\u00e9nom\u00e8nes",
+                                "code": 16,
+                                "enfants": [
+                                    {
+                                        "nom": "Mod\u00e9lisation",
+                                        "code": 17,
+                                        "sujet": "Ing\u00e9nierie",
+                                        "comm": " Hydrologique, IA,\u2026 avec choix de seuils de vigilance et d\u2019alerte"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nom": "Pendant",
+                "code": 18,
+                "enfants": [
+                    {
+                        "nom": "Surveillance",
+                        "code": 19,
+                        "enfants": [
+                            {
+                                "nom": "Ph\u00e9nom\u00e8nes",
+                                "code": 20,
+                                "enfants": [
+                                    {
+                                        "nom": "Mise en place et entretien de dispositifs de mesure",
+                                        "code": 21,
+                                        "sujet": "Dispositifs de mesure",
+                                        "comm": "Station limnim\u00e9trique, radar, cam\u00e9ra, observateur, mar\u00e9graphes, observatoires\u2026"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nom": "Apr\u00e8s",
+                "code": 22,
+                "enfants": [
+                    {
+                        "nom": "Connaissance",
+                        "code": 23,
+                        "enfants": [
+                            {
+                                "nom": "Toutes",
+                                "code": 24,
+                                "enfants": [
+                                    {
+                                        "nom": "Collecte des informations de terrain",
+                                        "code": 25,
+                                        "sujet": "Retour d\u2019exp\u00e9rience apr\u00e8s \u00e9v\u00e8nement",
+                                        "comm": " PHE, nivellements"
+                                    },
+                                    {
+                                        "nom": "Prise d\u2019images a\u00e9riennes ",
+                                        "code": 26,
+                                        "sujet": "Retour d\u2019exp\u00e9rience apr\u00e8s \u00e9v\u00e8nement",
+                                        "comm": "Avion, satellites, drones"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "nom": "Agir",
+        "code": 27,
+        "enfants": [
+            {
+                "nom": "Avant",
+                "code": 28,
+                "enfants": [
+                    {
+                        "nom": "Communication et information",
+                        "code": 29,
+                        "enfants": [
+                            {
+                                "nom": "Enjeux humains",
+                                "code": 30,
+                                "enfants": [
+                                    {
+                                        "nom": "Organisation d\u2019\u00e9v\u00e8nements, diffusion de supports, \u2026",
+                                        "code": 31,
+                                        "sujet": "Actions de communication",
+                                        "comm": "Expositions, ouverture de lieu d\u00e9di\u00e9s \u00e0 la pr\u00e9vention du risque, mailing, r\u00e9alisation de spots\u2026"
+                                    },
+                                    {
+                                        "nom": "Conception de supports de communication",
+                                        "code": 32,
+                                        "sujet": "Actions de communication",
+                                        "comm": "Journaux, sites web, expositions, plaquettes, jeux de r\u00f4les, documents de formation\u2026"
+                                    },
+                                    {
+                                        "nom": "R\u00e9alisation de documents r\u00e9glementaires : TIM, DICRIM, IAL",
+                                        "code": 33,
+                                        "sujet": "Supports de communication ou d\u2019information",
+                                        "comm": ""
+                                    },
+                                    {
+                                        "nom": "Choix et pose de rep\u00e8res de crues",
+                                        "code": 34,
+                                        "sujet": "Supports de communication ou d\u2019information",
+                                        "comm": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "Occupation du sol",
+                        "code": 35,
+                        "enfants": [
+                            {
+                                "nom": "Enjeux anthropiques",
+                                "code": 36,
+                                "enfants": [
+                                    {
+                                        "nom": "\u00c9tablissement",
+                                        "code": 37,
+                                        "sujet": "Port\u00e9 \u00e0 connaissance",
+                                        "comm": ""
+                                    },
+                                    {
+                                        "nom": "Int\u00e9gration dans la planification (inter-)communale",
+                                        "code": 38,
+                                        "sujet": "Ma\u00eetrise de l\u2019occupation des zones inondables",
+                                        "comm": "PLU(i) (zonage r\u00e8glementaire, r\u00e8glement, OAP), cartes communales \u2013 zones d\u2019interdiction, zones de prescription"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "R\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                        "code": 39,
+                        "enfants": [
+                            {
+                                "nom": "Enjeux anthropiques",
+                                "code": 40,
+                                "enfants": [
+                                    {
+                                        "nom": "R\u00e9alisation d\u2019un diagnostic individuel avec accompagnement",
+                                        "code": 41,
+                                        "sujet": "\u00c9tude de vuln\u00e9rabilit\u00e9",
+                                        "comm": "Sur b\u00e2timents d\u2019habitation, activit\u00e9s, \u00e9tablissements publics avec constitution de dossier, incitation \u00e0 la r\u00e9alisation de travaux)"
+                                    },
+                                    {
+                                        "nom": "R\u00e9alisation des travaux",
+                                        "code": 42,
+                                        "sujet": "Mesures de protection collective",
+                                        "comm": "Adaptation des r\u00e9seaux, acquisition de dispositifs sp\u00e9cifiques permettant la protection des enjeux"
+                                    },
+                                    {
+                                        "nom": "Mise en place des mesures (PFMS par ex)",
+                                        "code": 43,
+                                        "sujet": "Mesures de gestion individuelle",
+                                        "comm": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nom": "R\u00e9duction de l\u2019al\u00e9a",
+                        "code": 44,
+                        "enfants": [
+                            {
+                                "nom": "Ph\u00e9nom\u00e8nes",
+                                "code": 45,
+                                "enfants": [
+                                    {
+                                        "nom": "\u00c9tude de danger",
+                                        "code": 46,
+                                        "sujet": "\u00c9tude",
+                                        "comm": ""
+                                    },
+                                    {
+                                        "nom": "Mise en place, sch\u00e9ma directeur de gestion des eaux",
+                                        "code": 47,
+                                        "sujet": "Strat\u00e9gie de gestion",
+                                        "comm": ""
+                                    },
+                                    {
+                                        "nom": "\u00c9tablissement de conventions",
+                                        "code": 48,
+                                        "sujet": "Ma\u00eetrise fonci\u00e8re",
+                                        "comm": ""
+                                    },
+                                    {
+                                        "nom": "R\u00e9alisation de travaux",
+                                        "code": 49,
+                                        "sujet": "Syst\u00e8mes d\u2019endiguements , am\u00e9nagements hydrauliques, zones d\u2019expansion des crues",
+                                        "comm": "Inclut destructions d\u2019ouvrages, mise en conformit\u00e9, travaux de s\u00e9curisation"
+                                    },
+                                    {
+                                        "nom": "R\u00e9alisation de travaux",
+                                        "code": 50,
+                                        "sujet": "Restauration / entretien d\u2019un cours d\u2019eau",
+                                        "comm": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nom": "Pendant",
+                "code": 51,
+                "enfants": [
+                    {
+                        "nom": "Gestion de crise",
+                        "code": 52,
+                        "enfants": [
+                            {
+                                "nom": "Enjeux humains",
+                                "code": 53,
+                                "enfants": [
+                                    {
+                                        "nom": "R\u00e9alisation de PCS (ou PICS), PPMS, PFMS, PCA, ORSEC\u2026",
+                                        "code": 54,
+                                        "sujet": "Planification",
+                                        "comm": ""
+                                    },
+                                    {
+                                        "nom": "R\u00e9alisation d\u2019exercice ",
+                                        "code": 55,
+                                        "sujet": "Organisation d\u2019actions cibl\u00e9es",
+                                        "comm": "Pr\u00e9paration,\u00a0r\u00e9alisation, bilan"
+                                    },
+                                    {
+                                        "nom": "Mise en place de dispositifs de communication",
+                                        "code": 56,
+                                        "sujet": "Automates de communication",
+                                        "comm": "Via t\u00e9l\u00e9phone, courriels, sms, application smartphones, panneaux \u00e0 messages variables\u2026"
+                                    },
+                                    {
+                                        "nom": "Installation d\u2019instrumentation",
+                                        "code": 57,
+                                        "sujet": "Dispositifs de terrain",
+                                        "comm": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

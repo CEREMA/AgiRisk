@@ -1,0 +1,209 @@
+[
+    {
+        "code": "SNGRI",
+        "enfants": {
+            "objectif 1": {
+                "nom": "Augmenter la s\u00e9curit\u00e9 des populations",
+                "code": "obj_1",
+                "enfants": {
+                    "axe 1.1": {
+                        "nom": "La mise en danger des personnes au sein des b\u00e2timents",
+                        "code": "axe 1.1",
+                        "enfants": {
+                            "source S1/2": {
+                                "nom": "Inondation de b\u00e2timents et risque de rupture des ouvrants dans les zones de mont\u00e9e rapide de l'eau et/ou pouvant comporter une hauteur d'eau importante ",
+                                "code": "S1/2",
+                                "enfants": {
+                                    "S1/2a": {
+                                        "nom_original": "Nombre de personnes occupant des b\u00e2timents de plain-pied fortement inondables",
+                                        "nom_reformule": "Population occupant des b\u00e2timents de plain-pied fortement inondables",
+                                        "code": "Population occupant des b\u00e2timents de plain-pied fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/2b": {
+                                        "nom_original": "Nombre de personnes occupant des locaux fortement inondables",
+                                        "nom_reformule": "Population occupant des locaux (b\u00e2timents?) fortement inondables",
+                                        "code": "Population occupant des locaux (b\u00e2timents?) fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 1.4": {
+                        "nom": "Le manque de pr\u00e9paration \u00e0 la crise ",
+                        "code": "axe 1.4",
+                        "enfants": {
+                            "source S1/14": {
+                                "nom": "Pr\u00e9paration collective \u00e0 la crise",
+                                "code": "S1/14",
+                                "enfants": {
+                                    "S1/14e": {
+                                        "nom_original": "Nombre d'enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                                        "nom_reformule": "Enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                                        "code": "Enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "objectif 2": {
+                "nom": "R\u00e9duire le co\u00fbt des dommages",
+                "code": "obj_2",
+                "enfants": {
+                    "axe 2.1": {
+                        "nom": "Les dommages aux b\u00e2timents ",
+                        "code": "axe 2.1",
+                        "enfants": {
+                            "source S2/2": {
+                                "nom": "P\u00e9n\u00e9tration d'eau dans les logements",
+                                "code": "S2/2",
+                                "enfants": {
+                                    "S2/2a": {
+                                        "nom_original": "Dommages en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                                        "nom_reformule": "Montant des dommages aux logements en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                                        "code": "Montant des dommages aux logements en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 2.3": {
+                        "nom": "Les dommages aux activit\u00e9s et aux biens ",
+                        "code": "axe 2.3",
+                        "enfants": {
+                            "source S2/6": {
+                                "nom": "Inondation, \u00e9rosion, d\u00e9p\u00f4ts au sein des exploitations agricoles",
+                                "code": "S2/6",
+                                "enfants": {
+                                    "S2/6a": {
+                                        "nom_original": "Dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                                        "nom_reformule": "Montant des dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                                        "code": "Montant des dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 2.4": {
+                        "nom": "Les dommages aux infrastructures et aux r\u00e9seaux ",
+                        "code": "axe 2.4",
+                        "enfants": {
+                            "source S2/14": {
+                                "nom": "\u00c9volution de la vuln\u00e9rabilit\u00e9 dans le temps via le niveau d'int\u00e9gration du risque dans les politiques d'am\u00e9nagement",
+                                "code": "S2/14",
+                                "enfants": {
+                                    "S2/14a": {
+                                        "nom_original": "Surface de zones \u00e0 urbaniser en zone inondable ",
+                                        "nom_reformule": "Surfaces \u00e0 urbaniser inondables",
+                                        "code": "Surfaces \u00e0 urbaniser inondables",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "objectif 3": {
+                "nom": "Raccourcir le d\u00e9lai de retour \u00e0 la normale",
+                "code": "obj_3",
+                "enfants": {
+                    "axe 3.1": {
+                        "nom": "L'impact sur les territoires et ses capacit\u00e9s \u00e0 r\u00e9tablir les fonctions d'habitat, d'activit\u00e9... ",
+                        "code": "axe 3.1",
+                        "enfants": {
+                            "source S3/1": {
+                                "nom": "Impact potentiel d'une crue sur le territoire ",
+                                "code": "S3/1",
+                                "enfants": {
+                                    "S3/1a": {
+                                        "nom_original": "Nombre et proportion de personnes en zone inondable",
+                                        "nom_reformule": "Population en zone inondable",
+                                        "code": "Population en zone inondable",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/1f": {
+                                        "nom_original": "Surfaces agricoles inond\u00e9es",
+                                        "nom_reformule": "Surfaces agricoles inondables",
+                                        "code": "Surfaces agricoles inondables",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/2": {
+                                "nom": "Configuration de l'habitat face \u00e0 une inondation ",
+                                "code": "S3/2",
+                                "enfants": {
+                                    "S3/2b": {
+                                        "nom_original": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                                        "nom_reformule": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                                        "code": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/9": {
+                                "nom": "Capacit\u00e9 des gestionnaires d'infrastructures de transport \u00e0 maintenir leur fonctionnement ou \u00e0 les r\u00e9tablir",
+                                "code": "S3/9",
+                                "enfants": {
+                                    "S3/9b": {
+                                        "nom_original": "Proportion de r\u00e9seau de desserte locale affect\u00e9e",
+                                        "nom_reformule": "R\u00e9seau de desserte locale affect\u00e9e par l\u2019inondation",
+                                        "code": "R\u00e9seau de desserte locale affect\u00e9e par l\u2019inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 3.3": {
+                        "nom": "Le manque de pr\u00e9paration \u00e0 la crise ",
+                        "code": "axe 3.3",
+                        "enfants": {
+                            "source S3/13": {
+                                "nom": "Pr\u00e9paration collective au retour \u00e0 la normale",
+                                "code": "S3/13",
+                                "enfants": {
+                                    "S3/13c": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif r\u00e9glementaire",
+                                        "nom_reformule": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "code": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

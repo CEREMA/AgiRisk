@@ -1,0 +1,31 @@
+<RCC>
+  <qresource prefix="/plugins/plugin_agirisk">
+    <file>medias/Exemple_graphique_avancement_actions.gif</file>
+    <file>medias/suivi.gif</file>
+    <file>medias/action.gif</file>
+    <file>medias/analyse.png</file>
+    <file>medias/PhotoCrueNemoursArnaudBouissouTerra.png</file>
+    <file>medias/personnalisation.png</file>
+    <file>medias/territoiresfr.png</file>
+    <file>medias/icones/agirisk_3.svg</file>
+    <file>medias/icones/agirisk_2.svg</file>
+    <file>medias/icones/agirisk.svg</file>
+    <file>medias/icones/PictoAgiRisk.png</file>
+    <file>medias/Logo_RF_Cerema_horizontal.jpg</file>
+    <file>medias/Logo_RF_Cerema_horizontal_mini.jpg</file>
+    <file>medias/Logo AgiRiskHD.png</file>
+    <file>medias/fleches.png</file>
+    <file>medias/icones/IconeIso.svg</file>
+    <file>medias/icones/image823.png</file>
+    <file>medias/icones/inonder.png</file>
+    <file>ressources/icones/s3_1a.png</file>
+    <file>ressources/icones/s1_2a.png</file>
+    <file>ressources/icones/s1_2b.png</file>
+    <file>ressources/icones/s2_2a.png</file>
+    <file>ressources/icones/s2_6a.png</file>
+    <file>ressources/icones/s2_14a.png</file>
+    <file>ressources/icones/s3_1f.png</file>
+    <file>ressources/icones/s3_2b.png</file>
+    <file>ressources/icones/s2_7a.png</file>
+  </qresource>
+</RCC>

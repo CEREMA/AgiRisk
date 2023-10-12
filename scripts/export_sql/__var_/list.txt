@@ -1,0 +1,30 @@
+ Le volume dans le lecteur C s'appelle Windows
+ Le num‚ro de s‚rie du volume est 64D6-F527
+
+ R‚pertoire de C:\Users\aurelien.andrieu\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\plugin_agirisk_v1\scripts\export_sql\__var_
+
+28/09/2023  16:06    <DIR>          .
+28/09/2023  15:37    <DIR>          ..
+28/09/2023  16:06                 0 list.txt
+12/09/2023  17:42    <DIR>          old
+12/09/2023  17:42            17ÿ498 __var_all.sql
+12/09/2023  17:42            17ÿ541 __var_all_fct.sql
+12/09/2023  17:42             8ÿ941 __var_oc0.sql
+12/09/2023  17:42             8ÿ594 __var_oc11.sql
+12/09/2023  17:42            11ÿ232 __var_oc1_geom.sql
+28/09/2023  15:37            10ÿ486 __var_oc1_geomloc.sql
+12/09/2023  17:42             1ÿ341 __var_oc1_moda.sql
+12/09/2023  17:42            23ÿ384 __var_oc2_amc.sql
+12/09/2023  17:42            21ÿ102 __var_oc2_ref.sql
+28/09/2023  15:37            34ÿ352 __var_oc3.sql
+12/09/2023  17:42            12ÿ199 __var_oc5.sql
+12/09/2023  17:42            14ÿ650 __var_oc7.sql
+28/09/2023  15:37            21ÿ519 __var_pop1.sql
+12/09/2023  17:42            22ÿ655 __var_pop1_pas_a_pas.sql
+28/09/2023  15:37            19ÿ302 __var_pop5.sql
+12/09/2023  17:42             4ÿ056 __var_zq.sql
+28/09/2023  15:37             8ÿ585 __var_zt.sql
+12/09/2023  17:42            10ÿ840 __var_zt_avec_tables_association.sql
+12/09/2023  17:42             5ÿ881 __var_zx.sql
+              20 fichier(s)          274ÿ158 octets
+               3 R‚p(s)  674ÿ568ÿ163ÿ328 octets libres

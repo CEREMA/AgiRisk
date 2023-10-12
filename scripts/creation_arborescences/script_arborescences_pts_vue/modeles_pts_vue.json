@@ -1,0 +1,1085 @@
+[
+    {
+        "code": "SNGRI",
+        "enfants": {
+            "objectif 1": {
+                "nom": "Augmenter la s\u00e9curit\u00e9 des populations",
+                "code": "obj_1",
+                "enfants": {
+                    "axe 1.1": {
+                        "nom": "La mise en danger des personnes au sein des b\u00e2timents",
+                        "code": "axe 1.1",
+                        "enfants": {
+                            "source S1/1": {
+                                "nom": "Mise en p\u00e9ril de la structure des b\u00e2timents dans les zones de fortes vitesses du courant",
+                                "code": "S1/1",
+                                "enfants": {
+                                    "S1/1": {
+                                        "nom_original": "Nombre de personnes dans des b\u00e2timents susceptibles d'\u00eatre d\u00e9truits",
+                                        "nom_reformule": "Population occupant des b\u00e2timents susceptibles d'\u00eatre d\u00e9truits",
+                                        "code": "Population occupant des b\u00e2timents susceptibles d'\u00eatre d\u00e9truits",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/2": {
+                                "nom": "Inondation de b\u00e2timents et risque de rupture des ouvrants dans les zones de mont\u00e9e rapide de l'eau et/ou pouvant comporter une hauteur d'eau importante ",
+                                "code": "S1/2",
+                                "enfants": {
+                                    "S1/2a": {
+                                        "nom_original": "Nombre de personnes occupant des b\u00e2timents de plain-pied fortement inondables",
+                                        "nom_reformule": "Population occupant des b\u00e2timents de plain-pied fortement inondables",
+                                        "code": "Population occupant des b\u00e2timents de plain-pied fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/2b": {
+                                        "nom_original": "Nombre de personnes occupant des locaux fortement inondables",
+                                        "nom_reformule": "Population occupant des locaux fortement inondables",
+                                        "code": "Population occupant des locaux fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/3": {
+                                "nom": "D\u00e9stabilisation ou inondation d'habitats l\u00e9gers du type tentes, caravanes, camping-cars, habitations l\u00e9g\u00e8res de loisirs ou mobile-homes, bateaux-logements ",
+                                "code": "S1/3",
+                                "enfants": {
+                                    "S1/3a": {
+                                        "nom_original": "Nombre de personnes occupant une habitation l\u00e9g\u00e8re de loisirs, un mobile home, un camping-car, une caravane, une tente (hors camping et enjeux g\u00e9r\u00e9s) dans les zones d'al\u00e9a dangereuses pour une personne",
+                                        "nom_reformule": "Population occupant des habitations l\u00e9g\u00e8res fortement inondables",
+                                        "code": "Population occupant des habitations l\u00e9g\u00e8res fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/3b": {
+                                        "nom_original": "Nombre de personnes en campings (et autres enjeux similaires g\u00e9r\u00e9s) dans des zones d'al\u00e9as dangereuses pour une personne",
+                                        "nom_reformule": "Population en campings fortement inondables",
+                                        "code": "Population en campings fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/4": {
+                                "nom": "Vuln\u00e9rabilit\u00e9 des publics de certains \u00e9tablissements dits sensibles ",
+                                "code": "S1/4",
+                                "enfants": {
+                                    "S1/4": {
+                                        "nom_original": "Nombre de personnes dans les \u00e9tablissements sensibles",
+                                        "nom_reformule": "Population dans les \u00e9tablissements sensibles",
+                                        "code": "Population dans les \u00e9tablissements sensibles",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/5": {
+                                "nom": "Vuln\u00e9rabilit\u00e9 des \u00e9tablissements de sant\u00e9 ",
+                                "code": "S1/5",
+                                "enfants": {
+                                    "S1/5": {
+                                        "nom_original": "Nombre de personnes dans les \u00e9tablissements de sant\u00e9 vuln\u00e9rables",
+                                        "nom_reformule": "Population dans les \u00e9tablissements de sant\u00e9 vuln\u00e9rables",
+                                        "code": "Population dans les \u00e9tablissements de sant\u00e9 vuln\u00e9rables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 1.2": {
+                        "nom": "La mise en danger des personnes due aux dysfonctionnements des infrastructures et des r\u00e9seaux ",
+                        "code": "axe 1.2",
+                        "enfants": {
+                            "source S1/6": {
+                                "nom": "Pr\u00e9sence d'eau et/ou de courant dans les espaces ouverts fr\u00e9quent\u00e9s par des pi\u00e9tons ou des v\u00e9hicules ",
+                                "code": "S1/6",
+                                "enfants": {
+                                    "S1/6a": {
+                                        "nom_original": "Proportion de tampons non verrouill\u00e9s",
+                                        "nom_reformule": "Tampons non verrouill\u00e9s",
+                                        "code": "Tampons non verrouill\u00e9s",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/6b": {
+                                        "nom_original": "Nombre d'itin\u00e9raires routiers intercept\u00e9s par des zones d'al\u00e9a dangereuses pour une personne",
+                                        "nom_reformule": "Itin\u00e9raires routiers intercept\u00e9s par des zones fortement inondables",
+                                        "code": "Itin\u00e9raires routiers intercept\u00e9s par des zones fortement inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/7": {
+                                "nom": "Dangerosit\u00e9 des itin\u00e9raires d'acc\u00e8s aux habitations ",
+                                "code": "S1/7",
+                                "enfants": {
+                                    "S1/7": {
+                                        "nom_original": "Nombre d'habitants dans des zones accessibles par des axes dangereux",
+                                        "nom_reformule": "Population habitant dans des zones accessibles par des axes dangereux",
+                                        "code": "Population habitant dans des zones accessibles par des axes dangereux",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/8": {
+                                "nom": "Isolement prolong\u00e9 de quartiers peupl\u00e9s ",
+                                "code": "S1/8",
+                                "enfants": {
+                                    "S1/8": {
+                                        "nom_original": "Nombre de personnes au sein des zones urbanis\u00e9es longtemps inaccessibles et n'\u00e9tant pas organis\u00e9es pour le maintien sur place",
+                                        "nom_reformule": "Population au sein des zones urbanis\u00e9es longtemps inaccessibles et n'\u00e9tant pas organis\u00e9es pour le maintien sur place",
+                                        "code": "Population au sein des zones urbanis\u00e9es longtemps inaccessibles et n'\u00e9tant pas organis\u00e9es pour le maintien sur place",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/9": {
+                                "nom": "Difficult\u00e9 d'\u00e9vacuation de zones de concentration de population",
+                                "code": "S1/9",
+                                "enfants": {
+                                    "S1/9": {
+                                        "nom_original": "Nombre de personnes dans des zones de concentration",
+                                        "nom_reformule": "Population dans des zones de concentration",
+                                        "code": "Population dans des zones de concentration",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/10": {
+                                "nom": "Dangers li\u00e9s au dysfonctionnement de r\u00e9seau urbain",
+                                "code": "S1/10",
+                                "enfants": {
+                                    "S1/10": {
+                                        "nom_original": "Nombre de personnes d\u00e9pendantes en zone de fragilit\u00e9 \u00e9lectrique",
+                                        "nom_reformule": "Population d\u00e9pendante en zone de fragilit\u00e9 \u00e9lectrique",
+                                        "code": "Population d\u00e9pendante en zone de fragilit\u00e9 \u00e9lectrique",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 1.3": {
+                        "nom": "La mise en danger des personnes li\u00e9e aux sur-al\u00e9as ",
+                        "code": "axe 1.3",
+                        "enfants": {
+                            "source S1/11": {
+                                "nom": "Sur-al\u00e9a g\u00e9n\u00e9r\u00e9 par un ouvrage lin\u00e9aire (route, digue, barrage) ou des emb\u00e2cles",
+                                "code": "S1/11",
+                                "enfants": {
+                                    "S1/11": {
+                                        "nom_original": "Nombre de personnes expos\u00e9es \u00e0 un sur-al\u00e9a li\u00e9 \u00e0 la rupture d'ouvrage",
+                                        "nom_reformule": "Population expos\u00e9e \u00e0 un sur-al\u00e9a li\u00e9 \u00e0 la rupture d'ouvrage de lutte contre les inondations",
+                                        "code": "Population expos\u00e9e \u00e0 un sur-al\u00e9a li\u00e9 \u00e0 la rupture d'ouvrage de lutte contre les inondations",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/12": {
+                                "nom": "Sur-al\u00e9a technologique",
+                                "code": "S1/12",
+                                "enfants": {
+                                    "S1/12": {
+                                        "nom_original": "Nombre d'\u00e9tablissements dangereux susceptibles d'engendrer un sur-al\u00e9a",
+                                        "nom_reformule": "\u00c9tablissements dangereux susceptibles d'engendrer un sur-al\u00e9a",
+                                        "code": "\u00c9tablissements dangereux susceptibles d'engendrer un sur-al\u00e9a",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 1.4": {
+                        "nom": "Le manque de pr\u00e9paration \u00e0 la crise ",
+                        "code": "axe 1.4",
+                        "enfants": {
+                            "source S1/13": {
+                                "nom": "Pr\u00e9paration individuelle \u00e0 la crise",
+                                "code": "S1/13",
+                                "enfants": {
+                                    "S1/13a": {
+                                        "nom_original": "Variation saisonni\u00e8re de la population",
+                                        "nom_reformule": "Variation saisonni\u00e8re de la population",
+                                        "code": "Variation saisonni\u00e8re de la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S1/13b": {
+                                        "nom_original": "M\u00e9connaissance du risque par la population (enqu\u00eate)",
+                                        "nom_reformule": "M\u00e9connaissance du risque par la population",
+                                        "code": "M\u00e9connaissance du risque par la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/14": {
+                                "nom": "Pr\u00e9paration collective \u00e0 la crise",
+                                "code": "S1/14",
+                                "enfants": {
+                                    "S1/14a": {
+                                        "nom_original": "Variation saisonni\u00e8re de la population",
+                                        "nom_reformule": "Variation saisonni\u00e8re de la population",
+                                        "code": "Variation saisonni\u00e8re de la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S1/14b": {
+                                        "nom_original": "Proportion de personnes habitant une commune dont le PCS est ancien",
+                                        "nom_reformule": "Population habitant une commune dont le PCS est ancien",
+                                        "code": "Population habitant une commune dont le PCS est ancien",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/14c": {
+                                        "nom_original": "Proportion de personnes habitant une commune dont le DICRIM est insuffisamment adapt\u00e9 au territoire",
+                                        "nom_reformule": "Population habitant une commune dont le DICRIM est insuffisamment adapt\u00e9 au territoire",
+                                        "code": "Population habitant une commune dont le DICRIM est insuffisamment adapt\u00e9 au territoire",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/14d": {
+                                        "nom_original": "Proportion de personnes habitant une commune n'ayant pas r\u00e9alis\u00e9 un exercice de crise dans les 3 derni\u00e8res ann\u00e9es",
+                                        "nom_reformule": "Population habitant une commune n'ayant pas r\u00e9alis\u00e9 un exercice de crise dans les 3 derni\u00e8res ann\u00e9es",
+                                        "code": "Population habitant une commune n'ayant pas r\u00e9alis\u00e9 un exercice de crise dans les 3 derni\u00e8res ann\u00e9es",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/14e": {
+                                        "nom_original": "Nombre d'enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                                        "nom_reformule": "Enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                                        "code": "Enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S1/14f": {
+                                        "nom_original": "Existence ou non de syst\u00e8mes d'alerte performants (zones \u00e0 cin\u00e9tique rapide ou lente, zones dens\u00e9ment peupl\u00e9es)",
+                                        "nom_reformule": "Syst\u00e8mes d'alerte performants existants",
+                                        "code": "Syst\u00e8mes d'alerte performants existants",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S1/15": {
+                                "nom": "\u00c9volution de la vuln\u00e9rabilit\u00e9 dans le temps via le niveau d'int\u00e9gration du risque dans les politiques d'am\u00e9nagement ",
+                                "code": "S1/15",
+                                "enfants": {
+                                    "S1/15a": {
+                                        "nom_original": "Surface des zones en voie d'urbanisation, \u00e0 vocation d'habitation, et dont les acc\u00e8s sont dangereux",
+                                        "nom_reformule": "Zones en voie d'urbanisation, \u00e0 vocation d'habitation, et dont les acc\u00e8s sont dangereux",
+                                        "code": "Zones en voie d'urbanisation, \u00e0 vocation d'habitation, et dont les acc\u00e8s sont dangereux",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S1/15b": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif r\u00e9glementaire",
+                                        "nom_reformule": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "code": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S1/15c": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif financier",
+                                        "nom_reformule": "Population habitant une commune sans dispositif financier",
+                                        "code": "Population habitant une commune sans dispositif financier",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S1/15d": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif d'accompagnement technique",
+                                        "nom_reformule": "Population habitant une commune sans dispositif d'accompagnement technique",
+                                        "code": "Population habitant une commune sans dispositif d'accompagnement technique",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "objectif 2": {
+                "nom": "R\u00e9duire le co\u00fbt des dommages",
+                "code": "obj_2",
+                "enfants": {
+                    "axe 2.1": {
+                        "nom": "Les dommages aux b\u00e2timents ",
+                        "code": "axe 2.1",
+                        "enfants": {
+                            "source S2/1": {
+                                "nom": "Atteinte \u00e0 la structure des b\u00e2timents",
+                                "code": "S2/1",
+                                "enfants": {
+                                    "S2/1": {
+                                        "nom_original": "Dommages aux b\u00e2timents susceptibles d'\u00eatre d\u00e9truits",
+                                        "nom_reformule": "Dommages aux b\u00e2timents susceptibles d'\u00eatre d\u00e9truits",
+                                        "code": "Dommages aux b\u00e2timents susceptibles d'\u00eatre d\u00e9truits",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/2": {
+                                "nom": "P\u00e9n\u00e9tration d'eau dans les logements",
+                                "code": "S2/2",
+                                "enfants": {
+                                    "S2/2a": {
+                                        "nom_original": "Dommages en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                                        "nom_reformule": "Dommages aux logements en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                                        "code": "Dommages aux logements en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S2/2b": {
+                                        "nom_original": "Proportion de logements n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9 (pour la r\u00e9duction des dommages aux biens)",
+                                        "nom_reformule": "Logements n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "code": "Logements n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/3": {
+                                "nom": "Destruction ou endommagement des habitats l\u00e9gers ",
+                                "code": "S2/3",
+                                "enfants": {
+                                    "S2/3a": {
+                                        "nom_original": "Nombre d'habitations l\u00e9g\u00e8res de loisirs inondables",
+                                        "nom_reformule": "Habitations l\u00e9g\u00e8res de loisirs inondables",
+                                        "code": "Habitations l\u00e9g\u00e8res de loisirs inondables",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S2/3b": {
+                                        "nom_original": "Nombre de mobil-homes ne pouvant \u00eatre mis \u00e0 l'abri",
+                                        "nom_reformule": "Mobil-homes ne pouvant \u00eatre mis \u00e0 l'abri",
+                                        "code": "Mobil-homes ne pouvant \u00eatre mis \u00e0 l'abri",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 2.2": {
+                        "nom": "Les dommages au patrimoine",
+                        "code": "axe 2.2",
+                        "enfants": {
+                            "source S2/4": {
+                                "nom": "Dommages divers au patrimoine culturel",
+                                "code": "S2/4",
+                                "enfants": {
+                                    "S2/4a": {
+                                        "nom_original": "Nombre de mus\u00e9es et b\u00e2timents patrimoniaux susceptibles d'\u00eatre endommag\u00e9s",
+                                        "nom_reformule": "Mus\u00e9es et b\u00e2timents patrimoniaux susceptibles d'\u00eatre endommag\u00e9s",
+                                        "code": "Mus\u00e9es et b\u00e2timents patrimoniaux susceptibles d'\u00eatre endommag\u00e9s",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S2/4b": {
+                                        "nom_original": "Nombre de monuments, \u00e9difices patrimoniaux, remarquables, historiques susceptibles d'\u00eatre endommag\u00e9s",
+                                        "nom_reformule": "Monuments, \u00e9difices patrimoniaux, remarquables, historiques susceptibles d'\u00eatre endommag\u00e9s",
+                                        "code": "Monuments, \u00e9difices patrimoniaux, remarquables, historiques susceptibles d'\u00eatre endommag\u00e9s",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/5": {
+                                "nom": "Dommages \u00e0 l'environnement : charriage de pollution et des d\u00e9chets ",
+                                "code": "S2/5",
+                                "enfants": {
+                                    "S2/5a": {
+                                        "nom_original": "Volumes issus des stockages et d\u00e9p\u00f4ts susceptibles d'\u00eatre emport\u00e9s",
+                                        "nom_reformule": "Stockages et d\u00e9p\u00f4ts susceptibles d'\u00eatre emport\u00e9s",
+                                        "code": "Stockages et d\u00e9p\u00f4ts susceptibles d'\u00eatre emport\u00e9s",
+                                        "thematiques": []
+                                    },
+                                    "S2/5b": {
+                                        "nom_original": "Nombre d'installations susceptibles de d\u00e9verser des produits polluants",
+                                        "nom_reformule": "Installations susceptibles de d\u00e9verser des produits polluants",
+                                        "code": "Installations susceptibles de d\u00e9verser des produits polluants",
+                                        "thematiques": []
+                                    },
+                                    "S2/5c": {
+                                        "nom_original": "Surface d'espaces naturels prot\u00e9g\u00e9s vuln\u00e9rables",
+                                        "nom_reformule": "Espaces naturels prot\u00e9g\u00e9s vuln\u00e9rables",
+                                        "code": "Espaces naturels prot\u00e9g\u00e9s vuln\u00e9rables",
+                                        "thematiques": []
+                                    },
+                                    "S2/5d": {
+                                        "nom_original": "Capacit\u00e9 des captages AEP vuln\u00e9rables",
+                                        "nom_reformule": "Captages AEP vuln\u00e9rables",
+                                        "code": "Captages AEP vuln\u00e9rables",
+                                        "thematiques": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 2.3": {
+                        "nom": "Les dommages aux activit\u00e9s et aux biens ",
+                        "code": "axe 2.3",
+                        "enfants": {
+                            "source S2/6": {
+                                "nom": "Inondation, \u00e9rosion, d\u00e9p\u00f4ts au sein des exploitations agricoles",
+                                "code": "S2/6",
+                                "enfants": {
+                                    "S2/6a": {
+                                        "nom_original": "Dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                                        "nom_reformule": "Dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                                        "code": "Dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    },
+                                    "S2/6b": {
+                                        "nom_original": "Dommages au b\u00e2ti, au mat\u00e9riel et aux stocks agricoles",
+                                        "nom_reformule": "Dommages au b\u00e2ti, au mat\u00e9riel et aux stocks agricoles",
+                                        "code": "Dommages au b\u00e2ti, au mat\u00e9riel et aux stocks agricoles",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    },
+                                    "S2/6c": {
+                                        "nom_original": "Dommages au b\u00e9tail",
+                                        "nom_reformule": "Dommages au b\u00e9tail",
+                                        "code": "Dommages au b\u00e9tail",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/7": {
+                                "nom": "Inondation des b\u00e2timents, mobiliers et stocks, et pertes d'activit\u00e9s des entreprises",
+                                "code": "S2/7",
+                                "enfants": {
+                                    "S2/7a": {
+                                        "nom_original": "Dommages aux entreprises en fonction de param\u00e8tres hydrauliques et du d\u00e9lai d'intervention",
+                                        "nom_reformule": "Dommages aux entreprises en fonction de param\u00e8tres hydrauliques et du d\u00e9lai d'intervention",
+                                        "code": "Dommages aux entreprises en fonction de param\u00e8tres hydrauliques et du d\u00e9lai d'intervention",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    },
+                                    "S2/7b": {
+                                        "nom_original": "Proportion de b\u00e2timents d'activit\u00e9 n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9, parmi les b\u00e2timents impact\u00e9s de fa\u00e7on directe ou indirecte par l'inondation",
+                                        "nom_reformule": "B\u00e2timents d'activit\u00e9 \u00e9conomique n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "code": "B\u00e2timents d'activit\u00e9 \u00e9conomique n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/8": {
+                                "nom": "Inondation des b\u00e2timents et mobiliers des \u00e9tablissements publics",
+                                "code": "S2/8",
+                                "enfants": {
+                                    "S2/8a": {
+                                        "nom_original": "Dommages aux \u00e9tablissements publics en fonction de param\u00e8tres hydrauliques",
+                                        "nom_reformule": "Dommages aux \u00e9tablissements publics en fonction de param\u00e8tres hydrauliques",
+                                        "code": "Dommages aux \u00e9tablissements publics en fonction de param\u00e8tres hydrauliques",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S2/8b": {
+                                        "nom_original": "Proportion de b\u00e2timents publics n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9, parmi les b\u00e2timents impact\u00e9s de fa\u00e7on directe ou indirecte par l'inondation",
+                                        "nom_reformule": "B\u00e2timents publics n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "code": "B\u00e2timents publics n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/9": {
+                                "nom": "Destruction ou endommagement des v\u00e9hicules",
+                                "code": "S2/9",
+                                "enfants": {
+                                    "S2/9": {
+                                        "nom_original": "Nombre de v\u00e9hicules (terrestres) expos\u00e9s \u00e0 l'al\u00e9a",
+                                        "nom_reformule": "V\u00e9hicules terrestres expos\u00e9s \u00e0 l'al\u00e9a inondation",
+                                        "code": "V\u00e9hicules terrestres expos\u00e9s \u00e0 l'al\u00e9a inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 2.4": {
+                        "nom": "Les dommages aux infrastructures et aux r\u00e9seaux ",
+                        "code": "axe 2.4",
+                        "enfants": {
+                            "source S2/10": {
+                                "nom": "\u00c9rosion, destructions, d\u00e9p\u00f4ts sur les infrastructures, espaces, ouvrages et r\u00e9seaux (\u00e9rosion, d\u00e9chets...) ",
+                                "code": "S2/10",
+                                "enfants": {
+                                    "S2/10a": {
+                                        "nom_original": "Nombre de parties de r\u00e9seaux (n\u0153uds, liaisons) susceptibles d'\u00eatre endommag\u00e9s par l'inondation",
+                                        "nom_reformule": "Parties de r\u00e9seaux (n\u0153uds, liaisons) susceptibles d'\u00eatre endommag\u00e9s par l'inondation",
+                                        "code": "Parties de r\u00e9seaux (n\u0153uds, liaisons) susceptibles d'\u00eatre endommag\u00e9s par l'inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S2/10b": {
+                                        "nom_original": "Dommages aux voiries en fonction de la hauteur de submersion",
+                                        "nom_reformule": "Dommages aux voiries en fonction de la hauteur de submersion",
+                                        "code": "Dommages aux voiries en fonction de la hauteur de submersion",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/11": {
+                                "nom": "Dommages dus aux dysfonctionnements des r\u00e9seaux urbains",
+                                "code": "S2/11",
+                                "enfants": {
+                                    "S2/11": {
+                                        "nom_original": "Dommages dus aux dysfonctionnements des r\u00e9seaux (dans le cas de l'existence pr\u00e9alable d'un diagnostic de vuln\u00e9rabilit\u00e9 des r\u00e9seaux)",
+                                        "nom_reformule": "Dommages dus aux dysfonctionnements des r\u00e9seaux (dans le cas de l'existence pr\u00e9alable d'un diagnostic de vuln\u00e9rabilit\u00e9 des r\u00e9seaux)",
+                                        "code": "Dommages dus aux dysfonctionnements des r\u00e9seaux (dans le cas de l'existence pr\u00e9alable d'un diagnostic de vuln\u00e9rabilit\u00e9 des r\u00e9seaux)",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/12": {
+                                "nom": "Pr\u00e9paration individuelle \u00e0 la crise",
+                                "code": "S2/12",
+                                "enfants": {
+                                    "S2/12a": {
+                                        "nom_original": "Variation saisonni\u00e8re de la population",
+                                        "nom_reformule": "Variation saisonni\u00e8re de la population",
+                                        "code": "Variation saisonni\u00e8re de la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S2/12b": {
+                                        "nom_original": "M\u00e9connaissance du risque par la population (enqu\u00eate)",
+                                        "nom_reformule": "M\u00e9connaissance du risque par la population",
+                                        "code": "M\u00e9connaissance du risque par la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/13": {
+                                "nom": "Pr\u00e9paration collective \u00e0 la crise",
+                                "code": "S2/13",
+                                "enfants": {
+                                    "S2/13a": {
+                                        "nom_original": "Proportion d'ouvrages de protection n'\u00e9tant pas concern\u00e9s par un dispositif d'intervention d'urgence",
+                                        "nom_reformule": "Ouvrages de lutte contre les inondations n'\u00e9tant pas concern\u00e9s par un dispositif d'intervention d'urgence",
+                                        "code": "Ouvrages de lutte contre les inondations n'\u00e9tant pas concern\u00e9s par un dispositif d'intervention d'urgence",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S2/13b": {
+                                        "nom_original": "Dommages n'\u00e9tant pas \u00e9vit\u00e9s par des dispositifs (mat\u00e9riels, organisation...) permettant la protection collective des enjeux (barri\u00e8res anti-inondation, pompages...)",
+                                        "nom_reformule": "Dommages n'\u00e9tant pas \u00e9vit\u00e9s par des dispositifs permettant la protection collective des enjeux",
+                                        "code": "Dommages n'\u00e9tant pas \u00e9vit\u00e9s par des dispositifs permettant la protection collective des enjeux",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S2/14": {
+                                "nom": "\u00c9volution de la vuln\u00e9rabilit\u00e9 dans le temps via le niveau d'int\u00e9gration du risque dans les politiques d'am\u00e9nagement",
+                                "code": "S2/14",
+                                "enfants": {
+                                    "S2/14a": {
+                                        "nom_original": "Surface de zones \u00e0 urbaniser en zone inondable ",
+                                        "nom_reformule": "Surfaces \u00e0 urbaniser inondables",
+                                        "code": "Surfaces \u00e0 urbaniser inondables",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S2/14b": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif r\u00e9glementaire",
+                                        "nom_reformule": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "code": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S2/14c": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif financier",
+                                        "nom_reformule": "Population habitant une commune sans dispositif financier",
+                                        "code": "Population habitant une commune sans dispositif financier",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S2/14d": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif d'accompagnement technique",
+                                        "nom_reformule": "Population habitant une commune sans dispositif d'accompagnement technique",
+                                        "code": "Population habitant une commune sans dispositif d'accompagnement technique",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "objectif 3": {
+                "nom": "Raccourcir le d\u00e9lai de retour \u00e0 la normale",
+                "code": "obj_3",
+                "enfants": {
+                    "axe 3.1": {
+                        "nom": "L'impact sur les territoires et ses capacit\u00e9s \u00e0 r\u00e9tablir les fonctions d'habitat, d'activit\u00e9... ",
+                        "code": "axe 3.1",
+                        "enfants": {
+                            "source S3/1": {
+                                "nom": "Impact potentiel d'une crue sur le territoire ",
+                                "code": "S3/1",
+                                "enfants": {
+                                    "S3/1a": {
+                                        "nom_original": "Nombre et proportion de personnes en zone inondable",
+                                        "nom_reformule": "Population en zone inondable",
+                                        "code": "Population en zone inondable",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/1b": {
+                                        "nom_original": "Indicateurs de dommages calcul\u00e9s dans le cadre de l'objectif n\u00b02 (S2/2 \u00e0 S2/11)",
+                                        "nom_reformule": "Indicateurs de dommages calcul\u00e9s dans le cadre de l'objectif n\u00b02 (S2/2 \u00e0 S2/11)",
+                                        "code": "Indicateurs de dommages calcul\u00e9s dans le cadre de l'objectif n\u00b02 (S2/2 \u00e0 S2/11)",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/1c": {
+                                        "nom_original": "Emprise des b\u00e2timents d'habitation pouvant \u00eatre inond\u00e9s",
+                                        "nom_reformule": "Emprise des b\u00e2timents d'habitation pouvant \u00eatre inond\u00e9s",
+                                        "code": "Emprise des b\u00e2timents d'habitation pouvant \u00eatre inond\u00e9s",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/1d": {
+                                        "nom_original": "Nombre d'habitations l\u00e9g\u00e8res de loisirs inondables",
+                                        "nom_reformule": "Habitations l\u00e9g\u00e8res de loisirs inondables",
+                                        "code": "Habitations l\u00e9g\u00e8res de loisirs inondables",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/1e": {
+                                        "nom_original": "Nombre de mobil-homes pouvant \u00eatre mis \u00e0 l'abri",
+                                        "nom_reformule": "Mobil-homes ne pouvant \u00eatre mis \u00e0 l'abri",
+                                        "code": "Mobil-homes ne pouvant \u00eatre mis \u00e0 l'abri",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/1f": {
+                                        "nom_original": "Surfaces agricoles inond\u00e9es",
+                                        "nom_reformule": "Surfaces agricoles inondables",
+                                        "code": "Surfaces agricoles inondables",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/2": {
+                                "nom": "Configuration de l'habitat face \u00e0 une inondation ",
+                                "code": "S3/2",
+                                "enfants": {
+                                    "S3/2a": {
+                                        "nom_original": "Proportion de logements n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9 (pour le retour \u00e0 la normale)",
+                                        "nom_reformule": "Logements n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "code": "Logements n'ayant pas fait l'objet de mesures de r\u00e9duction de la vuln\u00e9rabilit\u00e9",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/2b": {
+                                        "nom_original": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                                        "nom_reformule": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                                        "code": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/2c": {
+                                        "nom_original": "Nombre de logements dont la dur\u00e9e de retour \u00e0 la normale est sup\u00e9rieure \u00e0 6 mois",
+                                        "nom_reformule": "Nombre de logements dont la dur\u00e9e de retour \u00e0 la normale est sup\u00e9rieure \u00e0 6 mois",
+                                        "code": "Nombre de logements dont la dur\u00e9e de retour \u00e0 la normale est sup\u00e9rieure \u00e0 6 mois",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/3": {
+                                "nom": "Capacit\u00e9 \u00e0 faire face aux cons\u00e9quences sociales et psychologiques li\u00e9es aux mises en danger ou \u00e0 la perte de biens",
+                                "code": "S3/3",
+                                "enfants": {
+                                    "S3/3": {
+                                        "nom_original": "Niveau social de la population",
+                                        "nom_reformule": "Niveau social de la population",
+                                        "code": "Niveau social de la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/4": {
+                                "nom": "Capacit\u00e9 des services publics prioritaires (h\u00f4pitaux...) \u00e0 faire face \u00e0 l'inondation",
+                                "code": "S3/4",
+                                "enfants": {
+                                    "S3/4a": {
+                                        "nom_original": "Part des \u00e9tablissements publics prioritaires ne disposant pas d'un PCA",
+                                        "nom_reformule": "\u00c9tablissements publics prioritaires ne disposant pas d'un PCA",
+                                        "code": "\u00c9tablissements publics prioritaires ne disposant pas d'un PCA",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/4b": {
+                                        "nom_original": "D\u00e9lai moyen de r\u00e9tablissement des services publics prioritaires affect\u00e9s par l'inondation",
+                                        "nom_reformule": "D\u00e9lai moyen de r\u00e9tablissement des services publics prioritaires affect\u00e9s par l'inondation",
+                                        "code": "D\u00e9lai moyen de r\u00e9tablissement des services publics prioritaires affect\u00e9s par l'inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/5": {
+                                "nom": "Capacit\u00e9 des autres services publics \u00e0 faire face \u00e0 l'inondation",
+                                "code": "S3/5",
+                                "enfants": {
+                                    "S3/5a": {
+                                        "nom_original": "Part des autres \u00e9tablissements publics ne disposant pas d'un PCA",
+                                        "nom_reformule": "\u00c9tablissements publics non prioritaires ne disposant pas d'un PCA",
+                                        "code": "\u00c9tablissements publics non prioritaires ne disposant pas d'un PCA",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/5b": {
+                                        "nom_original": "D\u00e9lai moyen de r\u00e9tablissement des autres services publics affect\u00e9s par l'inondation",
+                                        "nom_reformule": "D\u00e9lai moyen de r\u00e9tablissement des services publics non prioritaires affect\u00e9s par l'inondation",
+                                        "code": "D\u00e9lai moyen de r\u00e9tablissement des services publics non prioritaires affect\u00e9s par l'inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/6": {
+                                "nom": "Capacit\u00e9 des activit\u00e9s \u00e9conomiques \u00e0 faire face \u00e0 l'inondation",
+                                "code": "S3/6",
+                                "enfants": {
+                                    "S3/6a": {
+                                        "nom_original": "Nombre de zones ou centres d'activit\u00e9 ne disposant pas d'un PCA",
+                                        "nom_reformule": "Zones ou centres d'activit\u00e9 ne disposant pas d'un PCA",
+                                        "code": "Zones ou centres d'activit\u00e9 ne disposant pas d'un PCA",
+                                        "thematiques": [
+                                            "gestion_crise",
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    },
+                                    "S3/6b": {
+                                        "nom_original": "Nombre / chiffre d'affaires / nombre d'employ\u00e9s des entreprises susceptibles d'\u00eatre impact\u00e9es",
+                                        "nom_reformule": "Nombre / chiffre d'affaires / nombre d'employ\u00e9s des activit\u00e9s \u00e9conomiques susceptibles d'\u00eatre impact\u00e9es",
+                                        "code": "Nombre / chiffre d'affaires / nombre d'employ\u00e9s des activit\u00e9s \u00e9conomiques susceptibles d'\u00eatre impact\u00e9es",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    },
+                                    "S3/6c": {
+                                        "nom_original": "D\u00e9lai moyen de r\u00e9tablissement des entreprises strat\u00e9giques",
+                                        "nom_reformule": "D\u00e9lai moyen de r\u00e9tablissement des activit\u00e9s \u00e9conomiques strat\u00e9giques",
+                                        "code": "D\u00e9lai moyen de r\u00e9tablissement des activit\u00e9s \u00e9conomiques strat\u00e9giques",
+                                        "thematiques": [
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    },
+                                    "S3/6d": {
+                                        "nom_original": "Proportion des entreprises ne disposant pas d'un PCA",
+                                        "nom_reformule": "Activit\u00e9s \u00e9conomiques ne disposant pas d'un PCA",
+                                        "code": "Activit\u00e9s \u00e9conomiques ne disposant pas d'un PCA",
+                                        "thematiques": [
+                                            "gestion_crise",
+                                            "activit\u00e9 \u00e9conomique"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/7": {
+                                "nom": "Capacit\u00e9 \u00e0 faire face aux impacts environnementaux",
+                                "code": "S3/7",
+                                "enfants": {
+                                    "S3/7": {
+                                        "nom_original": "Proportion du territoire ne disposant pas d'un plan de gestion des d\u00e9chets post-inondation",
+                                        "nom_reformule": "Commune ne disposant pas d'un plan de gestion des d\u00e9chets post-inondation",
+                                        "code": "Commune ne disposant pas d'un plan de gestion des d\u00e9chets post-inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/8": {
+                                "nom": "Capacit\u00e9 \u00e0 faire face aux impacts patrimoniaux",
+                                "code": "S3/8",
+                                "enfants": {
+                                    "S3/8": {
+                                        "nom_original": "Proportion d'\u00e9tablissements patrimoniaux ne disposant pas d'un plan de sauvegarde des collections",
+                                        "nom_reformule": "\u00c9tablissements patrimoniaux ne disposant pas d'un plan de sauvegarde des collections",
+                                        "code": "\u00c9tablissements patrimoniaux ne disposant pas d'un plan de sauvegarde des collections",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/9": {
+                                "nom": "Capacit\u00e9 des gestionnaires d'infrastructures de transport \u00e0 maintenir leur fonctionnement ou \u00e0 les r\u00e9tablir",
+                                "code": "S3/9",
+                                "enfants": {
+                                    "S3/9a": {
+                                        "nom_original": "Nombre de v\u00e9hicules/jours g\u00ean\u00e9s sur les r\u00e9seaux de transit prenant en compte les itin\u00e9raires alternatifs",
+                                        "nom_reformule": "Nombre de v\u00e9hicules/jours g\u00ean\u00e9s sur les r\u00e9seaux de transit prenant en compte les itin\u00e9raires alternatifs",
+                                        "code": "Nombre de v\u00e9hicules/jours g\u00ean\u00e9s sur les r\u00e9seaux de transit prenant en compte les itin\u00e9raires alternatifs",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/9b": {
+                                        "nom_original": "Proportion de r\u00e9seau de desserte locale affect\u00e9e",
+                                        "nom_reformule": "R\u00e9seau de desserte locale affect\u00e9e par l\u2019inondation",
+                                        "code": "R\u00e9seau de desserte locale affect\u00e9e par l\u2019inondation",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/9c": {
+                                        "nom_original": "D\u00e9lais de remise en fonctionnement de tous les r\u00e9seaux de transport",
+                                        "nom_reformule": "D\u00e9lais de remise en fonctionnement de tous les r\u00e9seaux de transport",
+                                        "code": "D\u00e9lais de remise en fonctionnement de tous les r\u00e9seaux de transport",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 3.2": {
+                        "nom": "Le r\u00e9tablissement des infrastructures et des r\u00e9seaux ",
+                        "code": "axe 3.2",
+                        "enfants": {
+                            "source S3/10": {
+                                "nom": "Capacit\u00e9 \u00e0 maintenir ou \u00e0 remettre en \u00e9tat les ouvrages de protection",
+                                "code": "S3/10",
+                                "enfants": {
+                                    "S3/10a": {
+                                        "nom_original": "Proportion de lin\u00e9aire d'ouvrages de protection non concern\u00e9s par un dispositif d'intervention d'urgence et d\u00e9lai de remise en \u00e9tat",
+                                        "nom_reformule": "Ouvrages de lutte contre les inondations non concern\u00e9s par un dispositif d'intervention d'urgence et d\u00e9lai de remise en \u00e9tat",
+                                        "code": "Ouvrages de lutte contre les inondations non concern\u00e9s par un dispositif d'intervention d'urgence et d\u00e9lai de remise en \u00e9tat",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/10b": {
+                                        "nom_original": "D\u00e9lai pour une intervention d'urgence",
+                                        "nom_reformule": "D\u00e9lai pour une intervention d'urgence sur un ouvrage de lutte contre les inondations",
+                                        "code": "D\u00e9lai pour une intervention d'urgence sur un ouvrage de lutte contre les inondations",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/11": {
+                                "nom": "Capacit\u00e9 des gestionnaires \u00e0 maintenir ou r\u00e9tablir les r\u00e9seaux : \u00e9lectricit\u00e9, distribution d'eau potable, assainissement, d\u00e9chets, t\u00e9l\u00e9communications et gaz",
+                                "code": "S3/11",
+                                "enfants": {
+                                    "S3/11a": {
+                                        "nom_original": "Nombre de plans de gestion de crise (r\u00e9seaux)",
+                                        "nom_reformule": "Plans de gestion de crise relatifs aux r\u00e9seaux",
+                                        "code": "Plans de gestion de crise relatifs aux r\u00e9seaux",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/11b": {
+                                        "nom_original": "D\u00e9lai moyen de retour \u00e0 la normale des r\u00e9seaux",
+                                        "nom_reformule": "D\u00e9lai moyen de retour \u00e0 la normale des r\u00e9seaux",
+                                        "code": "D\u00e9lai moyen de retour \u00e0 la normale des r\u00e9seaux",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "axe 3.3": {
+                        "nom": "Le manque de pr\u00e9paration \u00e0 la crise ",
+                        "code": "axe 3.3",
+                        "enfants": {
+                            "source S3/12": {
+                                "nom": "Pr\u00e9paration individuelle au retour \u00e0 la normale",
+                                "code": "S3/12",
+                                "enfants": {
+                                    "S3/12": {
+                                        "nom_original": "M\u00e9connaissance du risque par la population (enqu\u00eate)",
+                                        "nom_reformule": "M\u00e9connaissance du risque par la population",
+                                        "code": "M\u00e9connaissance du risque par la population",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/13": {
+                                "nom": "Pr\u00e9paration collective au retour \u00e0 la normale",
+                                "code": "S3/13",
+                                "enfants": {
+                                    "S3/13a": {
+                                        "nom_original": "Pr\u00e9paration collective \u00e0 la crise pour limiter les d\u00e9g\u00e2ts",
+                                        "nom_reformule": "Pr\u00e9paration collective \u00e0 la crise pour limiter les d\u00e9g\u00e2ts",
+                                        "code": "Pr\u00e9paration collective \u00e0 la crise pour limiter les d\u00e9g\u00e2ts",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/13b": {
+                                        "nom_original": "Proportion de personnes habitant une commune ne disposant pas d'un PCS planifiant l'alimentation et l'h\u00e9bergement d'urgence",
+                                        "nom_reformule": "Population habitant une commune ne disposant pas d'un PCS planifiant l'alimentation et l'h\u00e9bergement d'urgence",
+                                        "code": "Population habitant une commune ne disposant pas d'un PCS planifiant l'alimentation et l'h\u00e9bergement d'urgence",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    },
+                                    "S3/13c": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif r\u00e9glementaire",
+                                        "nom_reformule": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "code": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/13d": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif financier",
+                                        "nom_reformule": "Population habitant une commune sans dispositif financier",
+                                        "code": "Population habitant une commune sans dispositif financier",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    },
+                                    "S3/13e": {
+                                        "nom_original": "Proportion de personnes habitant une commune sans dispositif d'accompagnement technique",
+                                        "nom_reformule": "Population habitant une commune sans dispositif d'accompagnement technique",
+                                        "code": "Population habitant une commune sans dispositif d'accompagnement technique",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/14": {
+                                "nom": "Moyens disponibles pour le nettoyage et le retour \u00e0 la normale",
+                                "code": "S3/14",
+                                "enfants": {
+                                    "S3/14": {
+                                        "nom_original": "Proportion de population dont la commune dispose d'une r\u00e9serve communale de s\u00e9curit\u00e9 civile",
+                                        "nom_reformule": "Population habitant une commune disposant d'une r\u00e9serve communale de s\u00e9curit\u00e9 civile",
+                                        "code": "Population habitant une commune disposant d'une r\u00e9serve communale de s\u00e9curit\u00e9 civile",
+                                        "thematiques": [
+                                            "gestion_crise"
+                                        ]
+                                    }
+                                }
+                            },
+                            "source S3/15": {
+                                "nom": "Dispositifs assurantiels",
+                                "code": "S3/15",
+                                "enfants": {
+                                    "S3/15": {
+                                        "nom_original": "Montant des dommages potentiels pour les biens non assur\u00e9s",
+                                        "nom_reformule": "Montant des dommages potentiels pour les biens non assur\u00e9s",
+                                        "code": "Montant des dommages potentiels pour les biens non assur\u00e9s",
+                                        "thematiques": [
+                                            "am\u00e9nagement"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

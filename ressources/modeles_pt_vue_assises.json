@@ -1,0 +1,530 @@
+[
+    {
+        "code": "SNGRI",
+        "enfants": [
+            {   
+            "type": "macro_indic",
+            "nom": "Augmenter la s\u00e9curit\u00e9 des populations",
+            "libelle": "Sécurité des personnes",
+            "code": "obj_1",
+            "enfants": [
+                {
+                "type": "macro_indic",
+                "nom": "La mise en danger des personnes au sein des b\u00e2timents",
+                "libelle": "Bâtiments",
+                "code": "axe 1.1",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Nombre de personnes occupant des b\u00e2timents de plain-pied fortement inondables",
+                        "nom_reformule": "Population occupant des b\u00e2timents de plain-pied fortement inondables",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif1/S1_2a/FicheTechniqueS1_2a/",
+                        "code": "s1_2a",
+                        "style": "style_s1_2a",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    },
+                    {
+                        "type": "indic",
+                        "nom_original": "Nombre de personnes occupant des locaux fortement inondables",
+                        "nom_reformule": "Population occupant un RDC fortement inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif1/S1_2b/FicheTechniqueS1_2b/",
+                        "code": "s1_2b",
+                        "style": "style_s1_2b",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+                },
+                {
+                "type": "macro_indic",
+                "nom": "Le manque de pr\u00e9paration \u00e0 la crise ",
+                "libelle": "Crise",
+                "code": "axe 1.4",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Nombre d'enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                        "nom_reformule": "Enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif1/S1_14e/FicheTechniqueS1_14e/",
+                        "code": "s1_14e",
+                        "style": "style_s1_14e",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+                }
+            ]
+            },
+            {
+            "type": "macro_indic",
+            "nom": "R\u00e9duire le co\u00fbt des dommages",
+            "libelle": "Coût des dommages",
+            "code": "obj_2",
+            "enfants": [
+                {
+                    "type": "macro_indic",
+                    "nom": "Les dommages aux b\u00e2timents ",
+                    "libelle": "Bâtiments",
+                    "code": "axe 2.1",
+                    "enfants": [
+                        {
+                            "type": "indic",
+                            "nom_original": "Dommages en fonction de la hauteur d'eau et de la dur\u00e9e de submersion",
+                            "nom_reformule": "Montant des dommages aux logements",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/S2_2a/FicheTechniqueS2_2a/",
+                            "code": "s2_2a_amc",
+                            "style": "style_s2_2a.qml",
+                            "thematiques": [
+                                "gestion_crise"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "macro_indic",
+                    "nom": "Les dommages aux activit\u00e9s et aux biens ",
+                    "libelle": "Activités et biens",
+                    "code": "axe 2.3",
+                    "enfants": [
+                        {
+                            "type": "indic",
+                            "nom_original": "Dommages aux cultures en fonction de param\u00e8tres hydrauliques",
+                            "nom_reformule": "Montant des dommages aux cultures ",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/S2_6a/FicheTechniqueS2_6a/",
+                            "code": "s2_6a",
+                            "style": "style_s2_6a.qml",
+                            "thematiques": [
+                                "activit\u00e9 \u00e9conomique"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "macro_indic",
+                    "nom": "Les dommages aux infrastructures et aux r\u00e9seaux ",
+                    "libelle": "Crise",
+                    "code": "axe 2.4",
+                    "enfants": [
+                        {
+                            "type": "indic",
+                            "nom_original": "Surface de zones \u00e0 urbaniser en zone inondable ",
+                            "nom_reformule": "Surfaces \u00e0 urbaniser inondables",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/S2_14a/FicheTechniqueS2_14a/",
+                            "code": "s2_14a",
+                            "style": "style_s2_14a.qml",
+                            "thematiques": [
+                                "am\u00e9nagement"
+                            ], 
+                            "moda_calcul": {
+                                "nom_fct_pgsql" : "__s2_14a", 
+                                "parametres" : [  {"nom_ter" : "text"}, 
+                                                        {"an_bdtopo" : "text"}, 
+                                                        {"code_occ" : "text"}], 
+                                "dependances_variables" : [
+                                    {"code_variable" : "oc0",                    
+                                    "moda_calcul" : {
+                                        "nom_fct_pgsql" : "__oc0()", 
+                                        "parametres" : [  {"nom_ter" : "text"}, 
+                                                        {"an_gpu" : "text"}]}}, 
+                                    {"code_variable" : "zx",                    
+                                    "moda_calcul" : {
+                                        "nom_fct_pgsql" : "None"}}]             
+                            }
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+            "type": "macro_indic",
+            "nom": "Raccourcir le d\u00e9lai de retour \u00e0 la normale",
+            "libelle": "Retour à la normale",
+            "code": "obj_3",
+            "enfants": [
+                {
+                    "type": "macro_indic",
+                    "nom": "L'impact sur les territoires et ses capacit\u00e9s \u00e0 r\u00e9tablir les fonctions d'habitat, d'activit\u00e9... ",
+                    "libelle": "Système territorial",
+                    "code": "axe 3.1",
+                    "enfants": [
+                        {
+                            "type": "indic",
+                            "nom_original": "Nombre et proportion de personnes en zone inondable",
+                            "nom_reformule": "Population en zone inondable",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_1a/FicheTechniqueS3_1a/",
+                            "code": "s3_1a",
+                            "style": "style_s3_1a.qml", 
+                            "thematiques": [
+                                "gestion_crise"
+                            ]
+                        },
+                        {
+                            "type": "indic",
+                            "nom_original": "Surfaces agricoles inond\u00e9es",
+                            "nom_reformule": "Surfaces agricoles inondables",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_1f/FicheTechniqueS3_1f/",
+                            "code": "s3_1f",
+                            "style": "style_s3_1f.qml",
+                            "thematiques": [
+                                "activit\u00e9 \u00e9conomique"
+                            ]
+                        },
+                        {
+                            "type": "indic",
+                            "nom_original": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                            "nom_reformule": "Capacit\u00e9s d'h\u00e9bergement du territoire situ\u00e9es hors zone inondable",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_2b/FicheTechniqueS3_2b/",
+                            "code": "s3_2b",
+                            "style": "style_s3_2b.qml",
+                            "thematiques": [
+                                "gestion_crise"
+                            ]
+                        },
+                        {
+                            "type": "indic",
+                            "nom_original": "Proportion de r\u00e9seau de desserte locale affect\u00e9e",
+                            "nom_reformule": "R\u00e9seau de desserte locale affect\u00e9e par l\u2019inondation",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_9b/FicheTechniqueS3_9b/",
+                            "code": "S3/9b",
+                            "thematiques": [
+                                "gestion_crise"
+                            ]
+                        }
+                    ]
+                    },
+                {
+                    "type": "macro_indic",
+                    "nom": "Le manque de pr\u00e9paration \u00e0 la crise ",
+                    "libelle": "Crise",
+                    "code": "axe 3.3",
+                    "enfants": [
+                        {
+                            "type": "indic",
+                            "nom_original": "Proportion de personnes habitant une commune sans dispositif r\u00e9glementaire",
+                            "nom_reformule": "Population habitant une commune sans dispositif r\u00e9glementaire",
+                            "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_13c/FicheTechniqueS3_13c/",
+                            "code": "s3_13c",
+                            "style": "style_s3_13c.qml",
+                            "thematiques": [
+                                "am\u00e9nagement"
+                            ]
+                        }
+                    ]
+                }
+            ]
+            }
+        ]
+    }, 
+    {
+        "code": "Aménagement", 
+        "enfants": [
+            {
+                "type": "macro_indic",
+                "nom": "Population", 
+                "code": "Population",
+                "libelle": "Population",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Logements en zone inondable",
+                        "nom_reformule": "Logements en zone inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/logt_zx/FicheTechniquelogt_zx/",
+                        "code": "logt_zx",
+                        "style": "none.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Montant des dommages aux logements",
+                        "nom_reformule": "Montant des dommages aux logements",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/S2_2a/FicheTechniqueS2_2a/",
+                        "code": "s2_2a_amc",
+                        "style": "style_s2_2a.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "macro_indic",
+                "nom": "Activités économiques", 
+                "code": "Economie",
+                "libelle": "Activités économiques", 
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Montant des dommages aux cultures",
+                        "nom_reformule": "Montant des dommages aux cultures",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/S2_6a/FicheTechniqueS2_6a/",
+                        "code": "s2_6a",
+                        "style": "style_s2_6a.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Montant des dommages aux entreprises",
+                        "nom_reformule": "Montant des dommages aux entreprises",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io",
+                        "code": "dom_ent",
+                        "style": "dom_ent.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    },
+                    {
+                        "type": "indic",
+                        "nom_original": "Emplois en zone inondable",
+                        "nom_reformule": "Emplois en zone inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif1/salaries_zx/FicheTechniquesalaries_zx/",
+                        "code": "salaries_zx",
+                        "style": "none.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "macro_indic",
+                "nom": "Action publique", 
+                "code": "Action publique",
+                "libelle": "Action publique",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Surfaces à urbaniser",
+                        "nom_reformule": "Surfaces à urbaniser",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif2/S2_14a/FicheTechniqueS2_14a/",
+                        "code": "s2_14a",
+                        "style": "style_s2_14a.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Capacités d'hébergement",
+                        "nom_reformule": "Capacités d'hébergement",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io",
+                        "code": "s3_2b",
+                        "style": "style_s3_2b.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "macro_indic",
+                "nom": "Réseaux", 
+                "code": "Réseaux",
+                "libelle": "Réseaux",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Postes énergie",
+                        "nom_reformule": "Postes énergie",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web",
+                        "code": "enr_zi",
+                        "thematiques": [
+                            "Aménagement"
+                        ]
+                    },
+                    {
+                        "type": "indic",
+                        "nom_original": "Postes de télécommunication",
+                        "nom_reformule": "Postes de télécommunication",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web",
+                        "code": "telecom_zi",
+                        "thematiques": [
+                            "Aménagement"
+                        ]
+                    },
+                    {
+                        "type": "indic",
+                        "nom_original": "Captages d'eau potable",
+                        "nom_reformule": "Captages d'eau potable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web",
+                        "code": "capt_aep",
+                        "thematiques": [
+                            "Aménagement"
+                        ]
+                    },
+                    {
+                        "type": "indic",
+                        "nom_original": "Réseau de desserte locale affecté",
+                        "nom_reformule": "Réseau de desserte locale affecté",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_9b/FicheTechniqueS3_9b/",
+                        "code": "s3_9b",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "code": "Crise", 
+        "enfants":[
+            {
+                "type": "macro_indic", 
+                "nom": "Population",
+                "code": "Population",
+                "libelle": "Population",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Population en zone inondable",
+                        "nom_reformule": "Population en zone inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_1a/FicheTechniqueS3_1a/",
+                        "code": "s3_1a",
+                        "style": "style_s3_1a.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Population en zone fortement inondable",
+                        "nom_reformule": "Population en zone fortement inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/",
+                        "code": "pop_zq",
+                        "style": "none.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Population âgée en zone inondable",
+                        "nom_reformule": "Population âgée en zone inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif1/pop_agee_zx/FicheTechniquepop_agee_zx/",
+                        "code": "pop_agee_zx",
+                        "style": "none.qml",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "macro_indic",
+                "nom": "Activités économiques",
+                "code": "Activités économiques",
+                "libelle": "Activités économiques",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Elevages en zone inondable",
+                        "nom_reformule": "Elevages en zone inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/",
+                        "code": "elevages_zi",
+                        "style": "elevages_zi.qml",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Entreprises disposant d'un plan de continuité d'activité",
+                        "nom_reformule": "Entreprises disposant d'un plan de continuité d'activité",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/",
+                        "code": "entr_pca",
+                        "style": "entr_pca.qml",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "macro_indic",
+                "nom": "Action publique",
+                "code": "Action publique",
+                "libelle": "Action publique",
+                "enfants": [
+                    {
+                        "type": "indic",
+                        "nom_original": "Capacités d'hébergement du territoire situées hors zone inondable",
+                        "nom_reformule": "Capacités d'hébergement du territoire situées hors zone inondable",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/",
+                        "code": "s3_2b",
+                        "style": "style_s3_2b.qml",
+                        "thematiques": [
+                            "am\u00e9nagement"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Ancienneté du PCS",
+                        "nom_reformule": "Ancienneté du PCS",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_9b/FicheTechniqueS3_9b/",
+                        "code": "pcs_age",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Nombre d'enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                        "nom_reformule": "Enjeux utiles \u00e0 la gestion de crise susceptibles de dysfonctionnement",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif1/S1_14e/FicheTechniqueS1_14e/",
+                        "code": "s1_14e",
+                        "style": "style_s1_14e",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "type": "macro_indic",
+                "nom": "Réseaux",
+                "code": "Réseaux",
+                "libelle": "Réseaux", 
+                "enfants":[
+                    {
+                        "type": "indic",
+                        "nom_original": "Réseau de desserte locale affecté",
+                        "nom_reformule": "Réseau de desserte locale affecté",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_9b/FicheTechniqueS3_9b/",
+                        "code": "s3_9b",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }, 
+                    {
+                        "type": "indic",
+                        "nom_original": "Axes (auto)routiers principaux affectés",
+                        "nom_reformule": "Axes (auto)routiers principaux affectés",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/Objectif3/S3_9b/FicheTechniqueS3_9b/",
+                        "code": "trsp_zx",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    },
+                    {
+                        "type": "indic",
+                        "nom_original": "Capacités de traitement et de stockage de déchets",
+                        "nom_reformule": "Capacités de traitement et de stockage de déchets",
+                        "lien_doc_web": "https://projet-agirisk.gitlab.io/site_web/05_VariablesIndicateurs/FichesIndicateurs/",
+                        "code": "dechets_zx",
+                        "thematiques": [
+                            "gestion_crise"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

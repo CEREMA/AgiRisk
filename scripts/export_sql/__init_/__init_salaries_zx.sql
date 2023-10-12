@@ -1,0 +1,83 @@
+SET client_encoding = 'UTF8';
+
+CREATE OR REPLACE PROCEDURE public.__init_salaries_zx()
+ LANGUAGE plpgsql
+AS $procedure$
+
+-- Procédure SQL d'initialisation de la table salaries_zx (nombre de salariés en zone inondable) dans le schéma p_indicateurs
+-- © Cerema / GT AgiRisk (auteur du script : Sébastien)
+-- Dernières mises à jour du script le 24/04/2023 par Lucie et le 26/08/2023 par Sébastien
+
+-- Commande d'appel à cette procédure :
+-- CALL public.__init_salaries_zx();
+
+DECLARE
+	com text; -- variable d'exécution des commentaires
+
+BEGIN
+
+	SET search_path TO p_indicateurs, public;
+	
+	RAISE NOTICE '';
+	RAISE NOTICE '====== RAPPORT ======';
+	RAISE NOTICE 'Initialisation de l''indicateur salaries_zx (salariés en zone inondable)';
+	
+	RAISE NOTICE 'Création de la structure de table attributaire salaries_zx';
+
+	-- TODO : champ id_bdt à confirmer
+
+	EXECUTE 'DROP TABLE IF EXISTS salaries_zx CASCADE';
+	EXECUTE 'CREATE TABLE salaries_zx (
+		id serial PRIMARY KEY,
+		territoire varchar(200),
+		id_epci varchar(9),
+		nom_epci varchar(200),
+		id_commune varchar(5),
+		nom_commune varchar(200),
+		id_iris varchar(9),
+		nom_iris varchar(200),
+		id_bdt varchar(50),
+		loc_zx varchar(30),
+		type_alea varchar(200),
+		code_occurrence varchar(200),
+		pop2_bas float,
+		pop2_haut float,
+		sce_donnee text,
+		moda_calc text,
+		date_calc date,
+		geom geometry(MultiPolygon,2154),
+		geomloc geometry(POINT,2154)
+	)';
+	RAISE NOTICE 'Création de la table salaries_zx effectuée';
+	
+	com := '
+	COMMENT ON TABLE salaries_zx IS ''Couche des salariés en zone inondable (Zx)'';
+	COMMENT ON COLUMN salaries_zx.id IS ''Identifiant unique non nul de type serial (clé primaire)'';
+	COMMENT ON COLUMN salaries_zx.territoire IS ''Nom du territoire d''''étude'';
+	COMMENT ON COLUMN salaries_zx.id_epci IS ''Numéro SIREN de l''''EPCI'';
+	COMMENT ON COLUMN salaries_zx.nom_epci IS ''Nom de l''''EPCI'';
+	COMMENT ON COLUMN salaries_zx.id_commune IS ''Code INSEE de la commune'';
+	COMMENT ON COLUMN salaries_zx.nom_commune IS ''Nom de la commune'';
+	COMMENT ON COLUMN salaries_zx.id_iris IS ''Code de l''''IRIS GE (maille de calcul élémentaire)'';
+	COMMENT ON COLUMN salaries_zx.nom_iris IS ''Nom de l''''IRIS GE (maille de calcul élémentaire)'';
+	COMMENT ON COLUMN salaries_zx.id_bdt IS ''Identifiant du bâtiment issu de la BDTOPO'';
+	COMMENT ON COLUMN salaries_zx.loc_zx IS ''Indique si le bâtiment intersecte ("in") ou non ("out") la zone inondable (Zx)'';
+	COMMENT ON COLUMN salaries_zx.type_alea IS ''Type d''''aléa considéré (ex : débordement de cours d''''eau, submersion marine, ruissellement)'';
+	COMMENT ON COLUMN salaries_zx.code_occurrence IS ''Code de la période de retour (ex : QRef, Q100, Q10, Xynthia_2100, Q_freq, Q_moy, Q_extr, Qref_plus50)'';
+	COMMENT ON COLUMN salaries_zx.pop2_bas IS ''Nombre de salariés à l''''intérieur du bâtiment, seuil bas'';
+	COMMENT ON COLUMN salaries_zx.pop2_haut IS ''Nombre de salariés à l''''intérieur du bâtiment, seuil haut'';
+	COMMENT ON COLUMN salaries_zx.sce_donnee IS ''Données sources utilisées (référentiels + millésimes)'';
+	COMMENT ON COLUMN salaries_zx.moda_calc IS ''Nom de la fonction postgis telle que stockée dans la BDD'';
+	COMMENT ON COLUMN salaries_zx.date_calc IS ''Date de création de l''''indicateur'';
+	COMMENT ON COLUMN salaries_zx.geom IS ''Description géographique de l''''entité (bâtiments inondables)'';
+	COMMENT ON COLUMN salaries_zx.geomloc IS ''Centroïde de la géométrie'';
+	';
+	EXECUTE (com);
+	RAISE NOTICE 'Commentaires ajoutés à la table salaries_zx';
+	
+	RAISE NOTICE '====== FIN TRAITEMENT ======';
+	RAISE NOTICE '[INFO] La table salaries_zx a été initialisée dans le schéma p_indicateurs';
+	RAISE NOTICE '';
+
+END;
+$procedure$

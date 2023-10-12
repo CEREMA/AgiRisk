@@ -1,0 +1,481 @@
+{
+    "SNGRI": {
+        "terr_etude": {
+            "Entite": "territoires.qml",
+            "IRIS": "territoires.qml",
+            "Commune": "territoires.qml",
+            "EPCI": "territoires.qml",
+            "Hexag_1ha": "territoires.qml",
+            "Hexag_5ha": "territoires.qml",
+            "Hexag_10ha": "territoires.qml",
+            "Hexag_50ha": "territoires.qml",
+            "Hexag_100ha": "territoires.qml"
+        },
+        "zx": {
+            "Entite": "zx.qml",
+            "IRIS": "zx.qml",
+            "Commune": "zx.qml",
+            "EPCI": "zx.qml",
+            "Hexag_1ha": "zx.qml",
+            "Hexag_5ha": "zx.qml",
+            "Hexag_10ha": "zx.qml",
+            "Hexag_50ha": "zx.qml",
+            "Hexag_100ha": "zx.qml"
+        },
+        "zq": {
+            "Entite": "zq.qml",
+            "IRIS": "zq.qml",
+            "Commune": "zq.qml",
+            "EPCI": "zq.qml",
+            "Hexag_1ha": "zq.qml",
+            "Hexag_5ha": "zq.qml",
+            "Hexag_10ha": "zq.qml",
+            "Hexag_50ha": "zq.qml",
+            "Hexag_100ha": "zq.qml"
+        },
+        "zh": {
+            "Entite": "zh.qml",
+            "IRIS": "zh.qml",
+            "Commune": "zh.qml",
+            "EPCI": "zh.qml",
+            "Hexag_1ha": "zh.qml",
+            "Hexag_5ha": "zh.qml",
+            "Hexag_10ha": "zh.qml",
+            "Hexag_50ha": "zh.qml",
+            "Hexag_100ha": "zh.qml"
+        },
+        "zv": {
+            "Entite": "zv.qml",
+            "IRIS": "zv.qml",
+            "Commune": "zv.qml",
+            "EPCI": "zv.qml",
+            "Hexag_1ha": "zv.qml",
+            "Hexag_5ha": "zv.qml",
+            "Hexag_10ha": "zv.qml",
+            "Hexag_50ha": "zv.qml",
+            "Hexag_100ha": "zv.qml"
+        },
+        "zt": {
+            "Entite": "zt.qml",
+            "IRIS": "zt.qml",
+            "Commune": "zt.qml",
+            "EPCI": "zt.qml",
+            "Hexag_1ha": "zt.qml",
+            "Hexag_5ha": "zt.qml",
+            "Hexag_10ha": "zt.qml",
+            "Hexag_50ha": "zt.qml",
+            "Hexag_100ha": "zt.qml"
+        },
+        "zf": {
+            "Entite": "zf.qml",
+            "IRIS": "zf.qml",
+            "Commune": "zf.qml",
+            "EPCI": "zf.qml",
+            "Hexag_1ha": "zf.qml",
+            "Hexag_5ha": "zf.qml",
+            "Hexag_10ha": "zf.qml",
+            "Hexag_50ha": "zf.qml",
+            "Hexag_100ha": "zf.qml"
+        },
+        "s1_2a": {
+            "Entite": "sngri__s1_2a__entite.qml",
+            "IRIS": "sngri__s1_2a__iris.qml",
+            "Commune": "sngri__s1_2a__commune.qml",
+            "EPCI": "sngri__s1_2a__epci.qml",
+            "Hexag_1ha": "sngri__s1_2a__hexag_1ha.qml",
+            "Hexag_5ha": "sngri__s1_2a__hexag_5ha.qml",
+            "Hexag_10ha": "sngri__s1_2a__hexag_10ha.qml",
+            "Hexag_50ha": "sngri__s1_2a__hexag_50ha.qml",
+            "Hexag_100ha": "sngri__s1_2a__hexag_100ha.qml"
+        },
+        "s1_2b": {
+            "Entite": "sngri__s1_2b__entite.qml",
+            "IRIS": "sngri__s1_2b__iris.qml",
+            "Commune": "sngri__s1_2b__commune.qml",
+            "EPCI": "sngri__s1_2b__epci.qml",
+            "Hexag_1ha": "sngri__s1_2b__hexag_1ha.qml",
+            "Hexag_5ha": "sngri__s1_2b__hexag_5ha.qml",
+            "Hexag_10ha": "sngri__s1_2b__hexag_10ha.qml",
+            "Hexag_50ha": "sngri__s1_2b__hexag_50ha.qml",
+            "Hexag_100ha": "sngri__s1_2b__hexag_100ha.qml"
+        },
+        "s1_14e": {
+            "Entite": "style.qml",
+            "IRIS": "style.qml",
+            "Commune": "style.qml",
+            "EPCI": "style.qml",
+            "Hexag_1ha": "style.qml",
+            "Hexag_5ha": "style.qml",
+            "Hexag_10ha": "style.qml",
+            "Hexag_50ha": "style.qml",
+            "Hexag_100ha": "style.qml"
+        },
+        "s2_2a_amc": {
+            "Entite": "sngri__s2_2a_amc__entite.qml",
+            "IRIS": "sngri__s2_2a_amc__iris.qml",
+            "Commune": "sngri__s2_2a_amc__commune.qml",
+            "EPCI": "sngri__s2_2a_amc__epci.qml",
+            "Hexag_1ha": "sngri__s2_2a_amc__hexag_1ha.qml",
+            "Hexag_5ha": "sngri__s2_2a_amc__hexag_5ha.qml",
+            "Hexag_10ha": "sngri__s2_2a_amc__hexag_10ha.qml",
+            "Hexag_50ha": "sngri__s2_2a_amc__hexag_50ha.qml",
+            "Hexag_100ha": "sngri__s2_2a_amc__hexag_100ha.qml"
+        },
+        "s2_6a": {
+            "Entite": "sngri__s2_6a__entite.qml",
+            "IRIS": "sngri__s2_6a__iris.qml",
+            "Commune": "sngri__s2_6a__commune.qml",
+            "EPCI": "sngri__s2_6a__epci.qml",
+            "Hexag_1ha": "sngri__s2_6a__entite.qml",
+            "Hexag_5ha": "sngri__s2_6a__entite.qml",
+            "Hexag_10ha": "sngri__s2_6a__entite.qml",
+            "Hexag_50ha": "sngri__s2_6a__entite.qml",
+            "Hexag_100ha": "sngri__s2_6a__commune.qml"
+        },
+        "s2_14a": {
+            "Entite": "sngri__s2_14a__entite.qml",
+            "IRIS": "sngri__s2_14a__iris.qml",
+            "Commune": "sngri__s2_14a__commune.qml",
+            "EPCI": "sngri__s2_14a__epci.qml",
+            "Hexag_1ha": "sngri__s2_14a__entite.qml",
+            "Hexag_5ha": "sngri__s2_14a__entite.qml",
+            "Hexag_10ha": "sngri__s2_14a__entite.qml",
+            "Hexag_50ha": "sngri__s2_14a__entite.qml",
+            "Hexag_100ha": "sngri__s2_14a__entite.qml"
+        },
+        "s3_1a": {
+            "Entite": "sngri__s3_1a__entite.qml",
+            "IRIS": "sngri__s3_1a__iris.qml",
+            "Commune": "sngri__s3_1a__commune.qml",
+            "EPCI": "sngri__s3_1a__epci.qml",
+            "Hexag_1ha": "sngri__s3_1a__hexag_1ha.qml",
+            "Hexag_5ha": "sngri__s3_1a__hexag_5ha.qml",
+            "Hexag_10ha": "sngri__s3_1a__hexag_10ha.qml",
+            "Hexag_50ha": "sngri__s3_1a__hexag_50ha.qml",
+            "Hexag_100ha": "sngri__s3_1a__hexag_100ha.qml"
+        },
+        "s3_1f": {
+            "Entite": "sngri__s3_1f__entite.qml",
+            "IRIS": "sngri__s3_1f__iris.qml",
+            "Commune": "sngri__s3_1f__commune.qml",
+            "EPCI": "sngri__s3_1f__epci.qml",
+            "Hexag_1ha": "sngri__s3_1f__entite.qml",
+            "Hexag_5ha": "sngri__s3_1f__entite.qml",
+            "Hexag_10ha": "sngri__s3_1f__entite.qml",
+            "Hexag_50ha": "sngri__s3_1f__entite.qml",
+            "Hexag_100ha": "sngri__s3_1f__entite.qml"
+        },
+        "s3_2b": {
+            "Entite": "sngri__s3_2b__entite.qml",
+            "IRIS": "sngri__s3_2b__iris.qml",
+            "Commune": "sngri__s3_2b__commune.qml",
+            "EPCI": "sngri__s3_2b__epci.qml",
+            "Hexag_1ha": "sngri__s3_2b__hexag_1ha.qml",
+            "Hexag_5ha": "sngri__s3_2b__hexag_5ha.qml",
+            "Hexag_10ha": "sngri__s3_2b__hexag_10ha.qml",
+            "Hexag_50ha": "sngri__s3_2b__hexag_50ha.qml",
+            "Hexag_100ha": "sngri__s3_2b__hexag_100ha.qml"
+        },
+        "s3_13c": {
+            "Entite": "style.qml",
+            "IRIS": "style.qml",
+            "Commune": "style.qml",
+            "EPCI": "style.qml",
+            "Hexag_1ha": "style.qml",
+            "Hexag_5ha": "style.qml",
+            "Hexag_10ha": "style.qml",
+            "Hexag_50ha": "style.qml",
+            "Hexag_100ha": "style.qml"
+        }
+    },
+    "Aménagement": {
+        "terr_etude": {
+            "Entite": "territoires.qml",
+            "IRIS": "territoires.qml",
+            "Commune": "territoires.qml",
+            "EPCI": "territoires.qml",
+            "Hexag_1ha": "territoires.qml",
+            "Hexag_5ha": "territoires.qml",
+            "Hexag_10ha": "territoires.qml",
+            "Hexag_50ha": "territoires.qml",
+            "Hexag_100ha": "territoires.qml"
+        },
+        "zx": {
+            "Entite": "zx.qml",
+            "IRIS": "zx.qml",
+            "Commune": "zx.qml",
+            "EPCI": "zx.qml",
+            "Hexag_1ha": "zx.qml",
+            "Hexag_5ha": "zx.qml",
+            "Hexag_10ha": "zx.qml",
+            "Hexag_50ha": "zx.qml",
+            "Hexag_100ha": "zx.qml"
+        },
+        "zq": {
+            "Entite": "zq.qml",
+            "IRIS": "zq.qml",
+            "Commune": "zq.qml",
+            "EPCI": "zq.qml",
+            "Hexag_1ha": "zq.qml",
+            "Hexag_5ha": "zq.qml",
+            "Hexag_10ha": "zq.qml",
+            "Hexag_50ha": "zq.qml",
+            "Hexag_100ha": "zq.qml"
+        },
+        "zh": {
+            "Entite": "zh.qml",
+            "IRIS": "zh.qml",
+            "Commune": "zh.qml",
+            "EPCI": "zh.qml",
+            "Hexag_1ha": "zh.qml",
+            "Hexag_5ha": "zh.qml",
+            "Hexag_10ha": "zh.qml",
+            "Hexag_50ha": "zh.qml",
+            "Hexag_100ha": "zh.qml"
+        },
+        "zv": {
+            "Entite": "zv.qml",
+            "IRIS": "zv.qml",
+            "Commune": "zv.qml",
+            "EPCI": "zv.qml",
+            "Hexag_1ha": "zv.qml",
+            "Hexag_5ha": "zv.qml",
+            "Hexag_10ha": "zv.qml",
+            "Hexag_50ha": "zv.qml",
+            "Hexag_100ha": "zv.qml"
+        },
+        "zt": {
+            "Entite": "zt.qml",
+            "IRIS": "zt.qml",
+            "Commune": "zt.qml",
+            "EPCI": "zt.qml",
+            "Hexag_1ha": "zt.qml",
+            "Hexag_5ha": "zt.qml",
+            "Hexag_10ha": "zt.qml",
+            "Hexag_50ha": "zt.qml",
+            "Hexag_100ha": "zt.qml"
+        },
+        "zf": {
+            "Entite": "zf.qml",
+            "IRIS": "zf.qml",
+            "Commune": "zf.qml",
+            "EPCI": "zf.qml",
+            "Hexag_1ha": "zf.qml",
+            "Hexag_5ha": "zf.qml",
+            "Hexag_10ha": "zf.qml",
+            "Hexag_50ha": "zf.qml",
+            "Hexag_100ha": "zf.qml"
+        },
+        "logt_zx": {
+            "Entite": "amenagement__logt_zx__entite.qml",
+            "IRIS": "amenagement__logt_zx__iris.qml",
+            "Commune": "amenagement__logt_zx__commune.qml",
+            "EPCI": "amenagement__logt_zx__epci.qml",
+            "Hexag_1ha": "amenagement__logt_zx__hexag_1ha.qml",
+            "Hexag_5ha": "amenagement__logt_zx__hexag_5ha.qml",
+            "Hexag_10ha": "amenagement__logt_zx__hexag_10ha.qml",
+            "Hexag_50ha": "amenagement__logt_zx__hexag_50ha.qml",
+            "Hexag_100ha": "amenagement__logt_zx__hexag_100ha.qml"
+        },
+        "s1_2b": {
+            "Entite": "amenagement__s1_2b__entite.qml",
+            "IRIS": "amenagement__s1_2b__iris.qml",
+            "Commune": "amenagement__s1_2b__commune.qml",
+            "EPCI": "amenagement__s1_2b__epci.qml",
+            "Hexag_1ha": "amenagement__s1_2b__hexag_1ha.qml",
+            "Hexag_5ha": "amenagement__s1_2b__hexag_5ha.qml",
+            "Hexag_10ha": "amenagement__s1_2b__hexag_10ha.qml",
+            "Hexag_50ha": "amenagement__s1_2b__hexag_50ha.qml",
+            "Hexag_100ha": "amenagement__s1_2b__hexag_100ha.qml"
+        },
+        "s2_2a_amc": {
+            "Entite": "amenagement__s2_2a_amc__entite.qml",
+            "IRIS": "amenagement__s2_2a_amc__iris.qml",
+            "Commune": "amenagement__s2_2a_amc__commune.qml",
+            "EPCI": "amenagement__s2_2a_amc__epci.qml",
+            "Hexag_1ha": "amenagement__s2_2a_amc__hexag_1ha.qml",
+            "Hexag_5ha": "amenagement__s2_2a_amc__hexag_5ha.qml",
+            "Hexag_10ha": "amenagement__s2_2a_amc__hexag_10ha.qml",
+            "Hexag_50ha": "amenagement__s2_2a_amc__hexag_50ha.qml",
+            "Hexag_100ha": "amenagement__s2_2a_amc__hexag_100ha.qml"
+        },
+        "s2_6a": {
+            "Entite": "amenagement__s2_6a__entite.qml",
+            "IRIS": "amenagement__s2_6a__iris.qml",
+            "Commune": "amenagement__s2_6a__commune.qml",
+            "EPCI": "amenagement__s2_6a__epci.qml",
+            "Hexag_1ha": "amenagement__s2_6a__entite.qml",
+            "Hexag_5ha": "amenagement__s2_6a__entite.qml",
+            "Hexag_10ha": "amenagement__s2_6a__entite.qml",
+            "Hexag_50ha": "amenagement__s2_6a__entite.qml",
+            "Hexag_100ha": "amenagement__s2_6a__commune.qml"
+        },
+        "s2_14a": {
+            "Entite": "amenagement__s2_14a__entite.qml",
+            "IRIS": "amenagement__s2_14a__iris.qml",
+            "Commune": "amenagement__s2_14a__commune.qml",
+            "EPCI": "amenagement__s2_14a__epci.qml",
+            "Hexag_1ha": "amenagement__s2_14a__entite.qml",
+            "Hexag_5ha": "amenagement__s2_14a__entite.qml",
+            "Hexag_10ha": "amenagement__s2_14a__entite.qml",
+            "Hexag_50ha": "amenagement__s2_14a__entite.qml",
+            "Hexag_100ha": "amenagement__s2_14a__entite.qml"
+        },
+        "s3_2b": {
+            "Entite": "amenagement__s3_2b__entite.qml",
+            "IRIS": "amenagement__s3_2b__iris.qml",
+            "Commune": "amenagement__s3_2b__commune.qml",
+            "EPCI": "amenagement__s3_2b__epci.qml",
+            "Hexag_1ha": "amenagement__s3_2b__hexag_1ha.qml",
+            "Hexag_5ha": "amenagement__s3_2b__hexag_5ha.qml",
+            "Hexag_10ha": "amenagement__s3_2b__hexag_10ha.qml",
+            "Hexag_50ha": "amenagement__s3_2b__hexag_50ha.qml",
+            "Hexag_100ha": "amenagement__s3_2b__hexag_100ha.qml"
+        },
+        "salaries_zx": {
+            "Entite": "amenagement__salaries_zx__entite.qml",
+            "IRIS": "amenagement__salaries_zx__iris.qml",
+            "Commune": "amenagement__salaries_zx__commune.qml",
+            "EPCI": "amenagement__salaries_zx__epci.qml",
+            "Hexag_1ha": "amenagement__salaries_zx__hexag_1ha.qml",
+            "Hexag_5ha": "amenagement__salaries_zx__hexag_5ha.qml",
+            "Hexag_10ha": "amenagement__salaries_zx__hexag_10ha.qml",
+            "Hexag_50ha": "amenagement__salaries_zx__hexag_50ha.qml",
+            "Hexag_100ha": "amenagement__salaries_zx__hexag_100ha.qml"
+            }
+    },
+    "Crise": {
+        "terr_etude": {
+            "Entite": "territoires.qml",
+            "IRIS": "territoires.qml",
+            "Commune": "territoires.qml",
+            "EPCI": "territoires.qml",
+            "Hexag_1ha": "territoires.qml",
+            "Hexag_5ha": "territoires.qml",
+            "Hexag_10ha": "territoires.qml",
+            "Hexag_50ha": "territoires.qml",
+            "Hexag_100ha": "territoires.qml"
+        },
+        "zx": {
+            "Entite": "zx.qml",
+            "IRIS": "zx.qml",
+            "Commune": "zx.qml",
+            "EPCI": "zx.qml",
+            "Hexag_1ha": "zx.qml",
+            "Hexag_5ha": "zx.qml",
+            "Hexag_10ha": "zx.qml",
+            "Hexag_50ha": "zx.qml",
+            "Hexag_100ha": "zx.qml"
+        },
+        "zq": {
+            "Entite": "zq.qml",
+            "IRIS": "zq.qml",
+            "Commune": "zq.qml",
+            "EPCI": "zq.qml",
+            "Hexag_1ha": "zq.qml",
+            "Hexag_5ha": "zq.qml",
+            "Hexag_10ha": "zq.qml",
+            "Hexag_50ha": "zq.qml",
+            "Hexag_100ha": "zq.qml"
+        },
+        "zh": {
+            "Entite": "zh.qml",
+            "IRIS": "zh.qml",
+            "Commune": "zh.qml",
+            "EPCI": "zh.qml",
+            "Hexag_1ha": "zh.qml",
+            "Hexag_5ha": "zh.qml",
+            "Hexag_10ha": "zh.qml",
+            "Hexag_50ha": "zh.qml",
+            "Hexag_100ha": "zh.qml"
+        },
+        "zv": {
+            "Entite": "zv.qml",
+            "IRIS": "zv.qml",
+            "Commune": "zv.qml",
+            "EPCI": "zv.qml",
+            "Hexag_1ha": "zv.qml",
+            "Hexag_5ha": "zv.qml",
+            "Hexag_10ha": "zv.qml",
+            "Hexag_50ha": "zv.qml",
+            "Hexag_100ha": "zv.qml"
+        },
+        "zt": {
+            "Entite": "zt.qml",
+            "IRIS": "zt.qml",
+            "Commune": "zt.qml",
+            "EPCI": "zt.qml",
+            "Hexag_1ha": "zt.qml",
+            "Hexag_5ha": "zt.qml",
+            "Hexag_10ha": "zt.qml",
+            "Hexag_50ha": "zt.qml",
+            "Hexag_100ha": "zt.qml"
+        },
+        "zf": {
+            "Entite": "zf.qml",
+            "IRIS": "zf.qml",
+            "Commune": "zf.qml",
+            "EPCI": "zf.qml",
+            "Hexag_1ha": "zf.qml",
+            "Hexag_5ha": "zf.qml",
+            "Hexag_10ha": "zf.qml",
+            "Hexag_50ha": "zf.qml",
+            "Hexag_100ha": "zf.qml"
+        },
+        "pop_zq": {
+            "Entite": "style.qml",
+            "IRIS": "style.qml",
+            "Commune": "style.qml",
+            "EPCI": "style.qml",
+            "Hexag_1ha": "style.qml",
+            "Hexag_5ha": "style.qml",
+            "Hexag_10ha": "style.qml",
+            "Hexag_50ha": "style.qml",
+            "Hexag_100ha": "style.qml"
+        },
+        "s1_2b": {
+            "Entite": "crise__s1_2b__entite.qml",
+            "IRIS": "crise__s1_2b__iris.qml",
+            "Commune": "crise__s1_2b__commune.qml",
+            "EPCI": "crise__s1_2b__epci.qml",
+            "Hexag_1ha": "crise__s1_2b__hexag_1ha.qml",
+            "Hexag_5ha": "crise__s1_2b__hexag_5ha.qml",
+            "Hexag_10ha": "crise__s1_2b__hexag_10ha.qml",
+            "Hexag_50ha": "crise__s1_2b__hexag_50ha.qml",
+            "Hexag_100ha": "crise__s1_2b__hexag_100ha.qml"
+        },
+        "s3_1a": {
+            "Entite": "crise__s3_1a__entite.qml",
+            "IRIS": "crise__s3_1a__iris.qml",
+            "Commune": "crise__s3_1a__commune.qml",
+            "EPCI": "crise__s3_1a__epci.qml",
+            "Hexag_1ha": "crise__s3_1a__hexag_1ha.qml",
+            "Hexag_5ha": "crise__s3_1a__hexag_5ha.qml",
+            "Hexag_10ha": "crise__s3_1a__hexag_10ha.qml",
+            "Hexag_50ha": "crise__s3_1a__hexag_50ha.qml",
+            "Hexag_100ha": "crise__s3_1a__hexag_100ha.qml"
+        },
+        "s3_2b": {
+            "Entite": "crise__s3_2b__entite.qml",
+            "IRIS": "crise__s3_2b__iris.qml",
+            "Commune": "crise__s3_2b__commune.qml",
+            "EPCI": "crise__s3_2b__epci.qml",
+            "Hexag_1ha": "crise__s3_2b__hexag_1ha.qml",
+            "Hexag_5ha": "crise__s3_2b__hexag_5ha.qml",
+            "Hexag_10ha": "crise__s3_2b__hexag_10ha.qml",
+            "Hexag_50ha": "crise__s3_2b__hexag_50ha.qml",
+            "Hexag_100ha": "crise__s3_2b__hexag_100ha.qml"
+        },
+        "pop_agee_zx": {
+            "Entite": "crise__pop_agee_zx__entite.qml",
+            "IRIS": "crise__pop_agee_zx__iris.qml",
+            "Commune": "crise__pop_agee_zx__commune.qml",
+            "EPCI": "crise__pop_agee_zx__epci.qml",
+            "Hexag_1ha": "crise__pop_agee_zx__hexag_1ha.qml",
+            "Hexag_5ha": "crise__pop_agee_zx__hexag_5ha.qml",
+            "Hexag_10ha": "crise__pop_agee_zx__hexag_10ha.qml",
+            "Hexag_50ha": "crise__pop_agee_zx__hexag_50ha.qml",
+            "Hexag_100ha": "crise__pop_agee_zx__hexag_100ha.qml"
+        }
+    }
+}

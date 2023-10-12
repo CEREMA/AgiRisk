@@ -1,0 +1,200 @@
+{
+    "Conna\u00eetre": {
+        "Avant": {
+            "Connaissance": {
+                "Ph\u00e9nom\u00e8nes": [
+                    {
+                        "sujet": "Ph\u00e9nom\u00e8nes d\u2019inondation ou d\u2019\u00e9rosion ",
+                        "comm": "T\u00e9moignages, PHE, photographies, documents\u2026",
+                        "detail": "Recherche et collecte d\u2019\u00e9l\u00e9ments historiques"
+                    },
+                    {
+                        "sujet": "Ph\u00e9nom\u00e8nes d\u2019inondation ou d\u2019\u00e9rosion ",
+                        "comm": "",
+                        "detail": "Collecte / synth\u00e8se d\u2019\u00e9tudes existantes"
+                    }
+                ],
+                "Tous enjeux": [
+                    {
+                        "sujet": "Exposition et vuln\u00e9rabilit\u00e9",
+                        "comm": "",
+                        "detail": "Identification et caract\u00e9risation des enjeux et de leur vuln\u00e9rabilit\u00e9 "
+                    }
+                ],
+                "Enjeux anthropiques": [
+                    {
+                        "sujet": "\u00c9tude de danger",
+                        "comm": "Niveaux de protection et zones prot\u00e9g\u00e9es",
+                        "detail": "Identification et caract\u00e9risation des ouvrages de protection"
+                    }
+                ],
+                "Enjeux humains": [
+                    {
+                        "sujet": "Populations",
+                        "comm": "Pour diff\u00e9rents types de publics",
+                        "detail": "Connaissance du niveau de sensibilisation"
+                    }
+                ],
+                "Risques": [
+                    {
+                        "sujet": "Risques (al\u00e9a + enjeux)",
+                        "comm": "Par ex calcul d\u2019indicateurs",
+                        "detail": "Croisement des al\u00e9as et des enjeux"
+                    }
+                ]
+            },
+            "Pr\u00e9vision": {
+                "Ph\u00e9nom\u00e8nes": [
+                    {
+                        "sujet": "Ing\u00e9nierie",
+                        "comm": " Hydrologique, IA,\u2026 avec choix de seuils de vigilance et d\u2019alerte",
+                        "detail": "Mod\u00e9lisation"
+                    }
+                ]
+            }
+        },
+        "Pendant": {
+            "Surveillance": {
+                "Ph\u00e9nom\u00e8nes": [
+                    {
+                        "sujet": "Dispositifs de mesure",
+                        "comm": "Station limnim\u00e9trique, radar, cam\u00e9ra, observateur, mar\u00e9graphes, observatoires\u2026",
+                        "detail": "Mise en place et entretien de dispositifs de mesure"
+                    }
+                ]
+            }
+        },
+        "Apr\u00e8s": {
+            "Connaissance": {
+                "Toutes": [
+                    {
+                        "sujet": "Retour d\u2019exp\u00e9rience apr\u00e8s \u00e9v\u00e8nement",
+                        "comm": " PHE, nivellements",
+                        "detail": "Collecte des informations de terrain"
+                    },
+                    {
+                        "sujet": "Retour d\u2019exp\u00e9rience apr\u00e8s \u00e9v\u00e8nement",
+                        "comm": "Avion, satellites, drones",
+                        "detail": "Prise d\u2019images a\u00e9riennes "
+                    }
+                ]
+            }
+        }
+    },
+    "Agir": {
+        "Avant": {
+            "Communication et information": {
+                "Enjeux humains": [
+                    {
+                        "sujet": "Actions de communication",
+                        "comm": "Expositions, ouverture de lieu d\u00e9di\u00e9s \u00e0 la pr\u00e9vention du risque, mailing, r\u00e9alisation de spots\u2026",
+                        "detail": "Organisation d\u2019\u00e9v\u00e8nements, diffusion de supports, \u2026"
+                    },
+                    {
+                        "sujet": "Actions de communication",
+                        "comm": "Journaux, sites web, expositions, plaquettes, jeux de r\u00f4les, documents de formation\u2026",
+                        "detail": "Conception de supports de communication"
+                    },
+                    {
+                        "sujet": "Supports de communication ou d\u2019information",
+                        "comm": "",
+                        "detail": "R\u00e9alisation de documents r\u00e9glementaires : TIM, DICRIM, IAL"
+                    },
+                    {
+                        "sujet": "Supports de communication ou d\u2019information",
+                        "comm": "",
+                        "detail": "Choix et pose de rep\u00e8res de crues"
+                    }
+                ]
+            },
+            "Occupation du sol": {
+                "Enjeux anthropiques": [
+                    {
+                        "sujet": "Port\u00e9 \u00e0 connaissance",
+                        "comm": "",
+                        "detail": "\u00c9tablissement"
+                    },
+                    {
+                        "sujet": "Ma\u00eetrise de l\u2019occupation des zones inondables",
+                        "comm": "PLU(i) (zonage r\u00e8glementaire, r\u00e8glement, OAP), cartes communales \u2013 zones d\u2019interdiction, zones de prescription",
+                        "detail": "Int\u00e9gration dans la planification (inter-)communale"
+                    }
+                ]
+            },
+            "R\u00e9duction de la vuln\u00e9rabilit\u00e9": {
+                "Enjeux anthropiques": [
+                    {
+                        "sujet": "\u00c9tude de vuln\u00e9rabilit\u00e9",
+                        "comm": "Sur b\u00e2timents d\u2019habitation, activit\u00e9s, \u00e9tablissements publics avec constitution de dossier, incitation \u00e0 la r\u00e9alisation de travaux)",
+                        "detail": "R\u00e9alisation d\u2019un diagnostic individuel avec accompagnement"
+                    },
+                    {
+                        "sujet": "Mesures de protection collective",
+                        "comm": "Adaptation des r\u00e9seaux, acquisition de dispositifs sp\u00e9cifiques permettant la protection des enjeux",
+                        "detail": "R\u00e9alisation des travaux"
+                    },
+                    {
+                        "sujet": "Mesures de gestion individuelle",
+                        "comm": "",
+                        "detail": "Mise en place des mesures (PFMS par ex)"
+                    }
+                ]
+            },
+            "R\u00e9duction de l\u2019al\u00e9a": {
+                "Ph\u00e9nom\u00e8nes": [
+                    {
+                        "sujet": "\u00c9tude",
+                        "comm": "",
+                        "detail": "\u00c9tude de danger"
+                    },
+                    {
+                        "sujet": "Strat\u00e9gie de gestion",
+                        "comm": "",
+                        "detail": "Mise en place, sch\u00e9ma directeur de gestion des eaux"
+                    },
+                    {
+                        "sujet": "Ma\u00eetrise fonci\u00e8re",
+                        "comm": "",
+                        "detail": "\u00c9tablissement de conventions"
+                    },
+                    {
+                        "sujet": "Syst\u00e8mes d\u2019endiguements , am\u00e9nagements hydrauliques, zones d\u2019expansion des crues",
+                        "comm": "Inclut destructions d\u2019ouvrages, mise en conformit\u00e9, travaux de s\u00e9curisation",
+                        "detail": "R\u00e9alisation de travaux"
+                    },
+                    {
+                        "sujet": "Restauration / entretien d\u2019un cours d\u2019eau",
+                        "comm": "",
+                        "detail": "R\u00e9alisation de travaux"
+                    }
+                ]
+            }
+        },
+        "Pendant": {
+            "Gestion de crise": {
+                "Enjeux humains": [
+                    {
+                        "sujet": "Planification",
+                        "comm": "",
+                        "detail": "R\u00e9alisation de PCS (ou PICS), PPMS, PFMS, PCA, ORSEC\u2026"
+                    },
+                    {
+                        "sujet": "Organisation d\u2019actions cibl\u00e9es",
+                        "comm": "Pr\u00e9paration,\u00a0r\u00e9alisation, bilan",
+                        "detail": "R\u00e9alisation d\u2019exercice "
+                    },
+                    {
+                        "sujet": "Automates de communication",
+                        "comm": "Via t\u00e9l\u00e9phone, courriels, sms, application smartphones, panneaux \u00e0 messages variables\u2026",
+                        "detail": "Mise en place de dispositifs de communication"
+                    },
+                    {
+                        "sujet": "Dispositifs de terrain",
+                        "comm": "",
+                        "detail": "Installation d\u2019instrumentation"
+                    }
+                ]
+            }
+        }
+    }
+}

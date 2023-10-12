@@ -1,0 +1,36 @@
+pdv = {}
+pdv['axes'] = [ {"nom_court" : 'Sécurité des personnes', 
+                    "nom_long" : 'Objectif 1 : augmenter la sécurité des personnes', 
+                    "enfants" : [], 
+                    "indicateurs" : []}, 
+                {"nom_court" : 'Coût des dommages', 
+                    "nom_long" : 'Objectif 2 : Réduire le coût des dommages liés aux inondations', 
+                    "enfants" : [], 
+                    "indicateurs" : []},
+                {"nom_court" : 'Retour à la normale', 
+                    "nom_long" : 'Objectif 3 : Raccourcir le délai de retour à la normale post-inondation', 
+                    "enfants" : [], 
+                    "indicateurs" : []}]
+pdv['axes'][0]['enfants'] = [ {"nom_court" : 'Axe 1.1', 
+                                "nom_long" : 'Axe 1.1 : Sécurité des personnes au sein des bâtiments', 
+                                "enfants" : [], 
+                                "indicateurs" : []}, 
+                            {"nom_court" : 'Axe 1.4', 
+                                "nom_long" : 'Axe 1.4 : Préparation à la crise', 
+                                "enfants" : [], 
+                                "indicateurs" : []}]
+pdv['axes'][0]['enfants'][0]['enfants'] = [ {"nom_court" : 'S1/2', 
+                                                "nom_long" : 'S1/2 - Inondation de bâtiments et risque de rupture des ouvrants dans les zones à montée rapide de l\'eau et / ou pouvant comporter une hauteur d\'eau importante', 
+                                                "indicateurs" : []}]
+pdv['axes'][0]['enfants'][0]['enfants'][0]['indicateurs'] = [{"nom court" : 'S1/2a', 
+                                                                "nom_long" : 'S1/2a : Nombre de personnes occupant des bâtiments de plain-pied fortement inondables', 
+                                                                "nom_fct_pgsql" : '__s12a()', 
+                                                                "moda_calcul" : []}, 
+                                                            {"nom court" : 'S1/2b', 
+                                                                "nom_long" : 'S1/2b : Nombre de personnes occupant des locaux fortement inondables', 
+                                                                "moda_calcul" : {}}]
+pdv['axes'][0]['enfants'][0]['enfants'][0]['indicateurs'][0]['moda_calcul'] = {"moda_calcul_indic" : '__s12b()', 
+                                                                                "moda_calcul_var" : [{"moda_calcul" : '__oc0()', 
+                                                                                                        "code_variable" : 'oc0'}, 
+                                                                                                     {"nom_fct_pgsql" : '__zx()', 
+                                                                                                        "code_variable" : 'zx'}]}

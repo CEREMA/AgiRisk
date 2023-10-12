@@ -1,0 +1,54 @@
+from ctypes.wintypes import LGRPID
+import os, json
+
+# Lecture du CSV
+nom_fichier = 'actions_inondations_ANRN.csv'
+chemin = os.path.join(os.path.dirname(__file__), nom_fichier)
+dict_brut = {}
+dict_actions = []
+with open(chemin, 'r', encoding="UTF-8") as f:
+    premiereligne = f.readline()
+    lignes = f.readlines()
+    for ligne in lignes:
+        mode, tempo, cible, theme, sujet, detail, commentaire = ligne.split('\n')[0].split('\t')
+        if mode in dict_brut.keys():
+            if tempo in dict_brut[mode].keys():
+                if theme in dict_brut[mode][tempo].keys():
+                    if cible in dict_brut[mode][tempo][theme].keys():
+                        dict_brut[mode][tempo][theme][cible] += [{"sujet": sujet, "comm": commentaire, "detail": detail}]
+                    else:
+                        dict_brut[mode][tempo][theme][cible] = [{"sujet": sujet, "comm": commentaire, "detail": detail}]
+                else:
+                    dict_brut[mode][tempo][theme] = {cible: [{"sujet": sujet, "comm": commentaire, "detail": detail}]}
+            else:
+                dict_brut[mode][tempo] = {theme: {cible: [{"sujet": sujet, "comm": commentaire, "detail": detail}]}}
+        else:
+            dict_brut[mode] = {tempo: {theme: {cible: [{"sujet": sujet, "comm": commentaire, "detail": detail}]}}}
+
+compteur = 0
+for mode in dict_brut.keys():
+    compteur += 1
+    dict_actions.append({"nom": mode, "code": compteur, "enfants": []})
+    for tempo in dict_brut[mode].keys():
+        compteur += 1
+        dict_actions[-1]["enfants"].append({"nom": tempo, "code": compteur, "enfants": []})
+        for theme in dict_brut[mode][tempo].keys():
+            compteur += 1
+            dict_actions[-1]["enfants"][-1]["enfants"].append({"nom": theme, "code": compteur, "enfants": []})
+            for cible in dict_brut[mode][tempo][theme].keys():
+                compteur += 1
+                dict_actions[-1]["enfants"][-1]["enfants"][-1]["enfants"].append({"nom": cible, "code": compteur, "enfants": []})
+                for action in dict_brut[mode][tempo][theme][cible]:
+                    compteur += 1
+                    dict_actions[-1]["enfants"][-1]["enfants"][-1]["enfants"][-1]["enfants"].append({"nom": action["detail"], "code": compteur, "sujet": action["sujet"], "comm": action["comm"]})
+
+# Sauvegarde du json
+nom_fichier_sortie = 'actions_inondations_ANRN.json'
+chemin_sortie = os.path.join(os.path.dirname(__file__), nom_fichier_sortie)
+with open(chemin_sortie, 'w', encoding="UTF-8") as f:
+    json.dump(dict_actions, f, indent=4)
+
+nom_fichier_sortie = 'actions_inondations_brut.json'
+chemin_sortie = os.path.join(os.path.dirname(__file__), nom_fichier_sortie)
+with open(chemin_sortie, 'w', encoding="UTF-8") as f:
+    json.dump(dict_brut, f, indent=4)

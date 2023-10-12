@@ -1,0 +1,3064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>AgiRisk - Amélioration de la Gestion Individualisée de la Résilience aux Inondations des Systèmes territoriaux</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font: 10 px &quot;Arial&quot;;
+	background-color: rgb(255,255,255);
+	color:black;
+}
+
+QToolButton{
+	border: 1px solid rgb(125,254,23);
+	background-color:  rgb(125,251,140);
+	border-radius: 10px;
+	box-shadow: 6px 6px 2px black
+}
+
+QTextEdit{
+	border: 1px solid red;
+	background-color: white;
+	color: red;
+	cursor: wait;
+	text-shadow: 5px 5px 2px blue;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="main_body" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="top_menu" native="true">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: none;
+	background-color:  rgb(41,37,116);
+	color: white;
+	border-radius: 5px;
+	font: 11px 'Arial';
+	font-weight: bold;
+	word-wrap: normal;
+}</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="menu_accueil">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ACCUEIL</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_terr_etude">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>TERRITOIRE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_choix_indic">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>INDICATEURS</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_moda_calcul">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>MODALITES 
+ DE CALCUL</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_diag">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>1500</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>
+DIAGNOSTIC
+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_actions_reduc">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ACTIONS</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_suivi_actions">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SUIVI</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menu_aide">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>AIDE</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="central_container" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QStackedWidget" name="onglets">
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QStackedWidget{
+	border:none
+}</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhHiddenText</set>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="currentIndex">
+            <number>2</number>
+           </property>
+           <widget class="QWidget" name="onglet1_accueil">
+            <property name="styleSheet">
+             <string notr="true">QWidget{
+	background-color: transparent;
+}
+
+QWidget#onglet1_accueil{
+	background-image: url(:/plugins/plugin_agirisk/medias/fleches.png);
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.55, radius:0.45, fx:0.5, fy:0.5, stop:0.0150754 rgba(252, 232, 227, 255), stop:0.61809 rgba(252, 232, 227, 255), stop:1 rgba(252, 252, 252, 0));
+
+}
+
+QPushButton{
+	border: none;
+	background-color:  rgb(41,37,116);
+	color: white;
+	border-radius: 10px;
+	word-wrap: normal;
+	font: 10px &quot;Arial&quot;;
+	font-weight: bold;
+}
+
+QLabel{
+	font: 11px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.34 rgba(251, 251, 251, 0), stop:0.341 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}</string>
+            </property>
+            <widget class="QWidget" name="gpe_etape1" native="true">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>410</y>
+               <width>181</width>
+               <height>201</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <widget class="QLabel" name="label_6">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>40</y>
+                <width>181</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Choix du territoire et des aléas</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="accueil_terr_etude">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>5</y>
+                <width>121</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>TERRITOIRE</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_etape3_3">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>8</y>
+                <width>26</width>
+                <height>26</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">width: 26px;
+height: 26px;
+border : 1 px solid red;
+background-color: rgb(239, 120, 88);
+font-weight: bold;
+font-size: 12pt;
+color: white;
+border-radius: 13px;</string>
+              </property>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_7" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>70</y>
+                <width>161</width>
+                <height>121</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/territoiresfr.png);</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="gpe_etape2" native="true">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>160</y>
+               <width>181</width>
+               <height>211</height>
+              </rect>
+             </property>
+             <widget class="QLabel" name="label_7">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>40</y>
+                <width>181</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Choix des indicateurs et modalités de calcul</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="accueil_choix_indic">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>5</y>
+                <width>121</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>PERSONNALISATION</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_etape3_2">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>8</y>
+                <width>26</width>
+                <height>26</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">width: 26px;
+height: 26px;
+border : 1 px solid red;
+background-color: rgb(239, 120, 88);
+font-weight: bold;
+font-size: 12pt;
+color: white;
+border-radius: 13px;</string>
+              </property>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_6" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>161</width>
+                <height>121</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/personnalisation.png);</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="gpe_etape3" native="true">
+             <property name="geometry">
+              <rect>
+               <x>530</x>
+               <y>170</y>
+               <width>231</width>
+               <height>151</height>
+              </rect>
+             </property>
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>40</y>
+                <width>231</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>de la vulnérabilité du territoire</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="accueil_diag">
+              <property name="geometry">
+               <rect>
+                <x>49</x>
+                <y>5</y>
+                <width>171</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>1500</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>DIAGNOSTIC</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_etape3">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>8</y>
+                <width>26</width>
+                <height>26</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">width: 26px;
+height: 26px;
+border : 1 px solid red;
+background-color: rgb(239, 120, 88);
+font-weight: bold;
+font-size: 12pt;
+color: white;
+border-radius: 13px;</string>
+              </property>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_5" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>70</y>
+                <width>211</width>
+                <height>81</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/analyse.png);</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="gpe_etape4" native="true">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>800</x>
+               <y>410</y>
+               <width>181</width>
+               <height>211</height>
+              </rect>
+             </property>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>40</y>
+                <width>181</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>pour réduire la vulnérabilité</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="accueil_actions_reduc">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>49</x>
+                <y>5</y>
+                <width>121</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>ACTIONS</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_11" native="true">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>80</y>
+                <width>181</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/action.gif);</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_etape4">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>8</y>
+                <width>26</width>
+                <height>26</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">width: 26px;
+height: 26px;
+border : 1 px solid red;
+background-color: rgb(239, 120, 88);
+font-weight: bold;
+font-size: 12pt;
+color: white;
+border-radius: 13px;</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="gpe_etape5" native="true">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>440</y>
+               <width>181</width>
+               <height>211</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <widget class="QWidget" name="widget_15" native="true">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>181</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <widget class="QPushButton" name="accueil_suivi_actions">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>49</x>
+                 <y>5</y>
+                 <width>121</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>SUIVI</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pb_etape5">
+               <property name="geometry">
+                <rect>
+                 <x>8</x>
+                 <y>8</y>
+                 <width>26</width>
+                 <height>26</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">width: 26px;
+height: 26px;
+border : 1 px solid red;
+background-color: rgb(239, 120, 88);
+font-weight: bold;
+font-size: 12pt;
+color: white;
+border-radius: 13px;</string>
+               </property>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>40</y>
+                <width>181</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>de l'évolution de la vulnérabilité</string>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_4" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/suivi.gif);</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QPushButton" name="pb_lien_site_cerema">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>301</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/plugins/plugin_agirisk/medias/Logo_RF_Cerema_horizontal.jpg</normaloff>:/plugins/plugin_agirisk/medias/Logo_RF_Cerema_horizontal.jpg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>301</width>
+               <height>81</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pb_lien_site_agirisk">
+             <property name="geometry">
+              <rect>
+               <x>850</x>
+               <y>10</y>
+               <width>201</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">image: url(:/plugins/plugin_agirisk/medias/Logo AgiRiskHD.png);
+background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>191</width>
+               <height>71</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_21">
+             <property name="geometry">
+              <rect>
+               <x>460</x>
+               <y>280</y>
+               <width>374</width>
+               <height>350</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgba(255, 255, 255, 0);
+background-image: url(:/plugins/plugin_agirisk/medias/PhotoCrueNemoursArnaudBouissouTerra.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <zorder>label_21</zorder>
+            <zorder>gpe_etape1</zorder>
+            <zorder>gpe_etape2</zorder>
+            <zorder>pb_lien_site_cerema</zorder>
+            <zorder>pb_lien_site_agirisk</zorder>
+            <zorder>gpe_etape3</zorder>
+            <zorder>gpe_etape4</zorder>
+            <zorder>gpe_etape5</zorder>
+           </widget>
+           <widget class="QWidget" name="onglet2_terr_etude">
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	border:none;
+	background-color: white;
+	font: 14px 'Arial';
+	font-weight: bold;
+	color: rgb(239, 120, 88);
+}
+
+QLabel{
+	border:none;
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+QComboBox{
+	border: none;
+	border-bottom: 1px solid rgba(251, 212, 81, 255);
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);	
+}
+
+QPushButton{
+	background-color: rgba(249,191,144,255);
+	border-radius: 3px;
+	border:2px outset rgb(239, 120, 88);
+	color: rgba(41, 37, 116, 255);
+	font: 11px &quot;Arial&quot;;
+	font-weight: bold;
+}</string>
+            </property>
+            <widget class="QGroupBox" name="gb_terr_etude">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>1050</width>
+               <height>700</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="title">
+              <string>Territoire d'étude et aléa considéré</string>
+             </property>
+             <widget class="QComboBox" name="cbox_terr_etude">
+              <property name="geometry">
+               <rect>
+                <x>100</x>
+                <y>60</y>
+                <width>400</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="maxVisibleItems">
+               <number>20</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Sélectionner votre territoire</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QGroupBox" name="gb_emprise_carto">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>140</y>
+                <width>1010</width>
+                <height>540</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Emprise cartographique (carte)</string>
+              </property>
+              <widget class="QgsMapCanvas" name="carte_territoire" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1010</width>
+                 <height>540</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QgsMapCanvas{
+	border:none;
+}</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QPushButton" name="selection_territoire_etude">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>90</y>
+                <width>130</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nouveau territoire</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lbl_choix_terr_etude_2">
+              <property name="geometry">
+               <rect>
+                <x>550</x>
+                <y>60</y>
+                <width>90</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Occurrence : </string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="cbox_couche_alea">
+              <property name="geometry">
+               <rect>
+                <x>640</x>
+                <y>60</y>
+                <width>350</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="locale">
+               <locale language="French" country="France"/>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="duplicatesEnabled">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Liste des couches d'aléas disponibles</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Zip Zich</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>PPRi</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QLabel" name="lbl_choix_terr_etude">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>60</y>
+                <width>80</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Territoire :</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="cbox_type_alea">
+              <property name="geometry">
+               <rect>
+                <x>640</x>
+                <y>30</y>
+                <width>350</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="locale">
+               <locale language="French" country="France"/>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="currentText">
+               <string>Liste des couches d'aléas disponibles</string>
+              </property>
+              <property name="duplicatesEnabled">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>Liste des couches d'aléas disponibles</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Zip Zich</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>PPRi</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QLabel" name="lbl_choix_type_alea">
+              <property name="geometry">
+               <rect>
+                <x>550</x>
+                <y>30</y>
+                <width>90</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Type aléa :</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="selection_alea">
+              <property name="geometry">
+               <rect>
+                <x>550</x>
+                <y>90</y>
+                <width>150</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nouvelle couche d'aléa</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="onglet3_choix_indicateurs">
+            <property name="styleSheet">
+             <string notr="true">*{
+	border: none;
+}
+
+QGroupBox{
+	border:none;
+	background-color: white;
+	font: 14px 'Arial';
+	font-weight: bold;
+	color: rgb(239, 120, 88);
+}
+
+QLabel{
+	border:none;
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+QComboBox{
+	border: none;
+	border-bottom: 1px solid rgba(251, 212, 81, 255);
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);	
+}
+
+QPushButton{
+	background-color: rgba(249,191,144,255);
+	border-radius: 3px;
+	border:2px outset rgb(239, 120, 88);
+	color: rgba(41, 37, 116, 255);
+	font: 11px &quot;Arial&quot;;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+QPushButton:pressed{
+	border:2px inset rgb(239, 120, 88);
+}
+
+QRadioButton{
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+
+QRadioButtfon {
+	background-color: rgb(252,254,252);
+	color: black;
+}
+
+QRadioButton::indicator {
+	width: 11px;
+	height: 11px;
+	border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+	border: 1px solid; 
+	border-color: rgb(239, 120, 88);
+	border-radius: 5px;
+	background-color: white; 
+	width: 11px; 
+	height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+	border: 3px solid; 
+	border-color: white;
+	border-radius: 6px;
+	background-color: rgba(41, 37, 116, 255);
+	width: 7px; 
+	height: 7px; 
+}
+
+QCheckBox:pressed{
+	border:2px inset rgb(239, 120, 88);
+}
+
+QCheckBox{
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+QCheckBox::indicator {
+	width: 11px;
+	height: 11px;
+	border-radius: 1px;
+}
+
+QCheckBox::indicator::unchecked{ 
+	border: 1px solid; 
+	border-color: rgb(239, 120, 88);
+	border-radius: 1px;
+	background-color: white; 
+	width: 11px; 
+	height: 11px; 
+}
+
+QCheckBox::indicator::checked{ 
+	border: 3px solid; 
+	border-color: white;
+	border-radius: 1px;
+	background-color: rgba(41, 37, 116, 255);
+	width: 7px; 
+	height: 7px; 
+}</string>
+            </property>
+            <widget class="QGroupBox" name="gb_choix_pt_de_vue">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>20</y>
+               <width>450</width>
+               <height>200</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Choix du point de vue</string>
+             </property>
+             <widget class="QWidget" name="rb_parent_pt_vue" native="true">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>20</y>
+                <width>301</width>
+                <height>171</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="layout_liste_pts_vue">
+                 <property name="spacing">
+                  <number>16</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="pb_nvelle_arborescence">
+                   <property name="text">
+                    <string>Personnaliser une 
+nouvelle arborescence</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="gb_thematiques">
+             <property name="geometry">
+              <rect>
+               <x>490</x>
+               <y>20</y>
+               <width>341</width>
+               <height>200</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Thématiques et centres d'intérêt</string>
+             </property>
+             <widget class="QPushButton" name="pb_valider_thematiques">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>30</y>
+                <width>93</width>
+                <height>28</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Ok</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>20</y>
+                <width>205</width>
+                <height>161</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="vl_thematiques">
+               <item>
+                <widget class="QCheckBox" name="chkb_gestion_crise">
+                 <property name="text">
+                  <string>Gestion de crise</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chkb_amenagt_terr">
+                 <property name="text">
+                  <string>Aménagement du territoire</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chkb_act_economique">
+                 <property name="text">
+                  <string>Activité économique</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chkb_environnement">
+                 <property name="text">
+                  <string>Environnement</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="gb_choix_indic">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>240</y>
+               <width>1000</width>
+               <height>470</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Sélection des indicateurs : </string>
+             </property>
+             <widget class="QWidget" name="w_arbo_indicateurs_parent" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>980</width>
+                <height>440</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QScrollArea" name="scrollArea">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>980</width>
+                    <height>440</height>
+                   </rect>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="widget_14" native="true"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QPushButton" name="pb_indic_retenu">
+              <property name="geometry">
+               <rect>
+                <x>210</x>
+                <y>1</y>
+                <width>121</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(96, 180, 103);
+border: none;
+border-radius: 2px; 
+color:white;
+margin:0px;
+padding:0px; 
+margin-top:1px</string>
+              </property>
+              <property name="text">
+               <string>Indicateur calculé</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pb_indic_ecarte">
+              <property name="geometry">
+               <rect>
+                <x>340</x>
+                <y>1</y>
+                <width>311</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #f2f2f2;
+border: none;
+border-radius: 2px; 
+color: #969696;
+margin:0px;
+padding:0px; 
+margin-top:1px</string>
+              </property>
+              <property name="text">
+               <string>Script de calcul non disponible / indicateur non calculé</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QPushButton" name="pb_var_all">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>50</y>
+               <width>291</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Lancer calcul des variables</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pb_indic_all">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>90</y>
+               <width>291</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Lancer calcul des indicateurs</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pb_indic_rc_all">
+             <property name="geometry">
+              <rect>
+               <x>780</x>
+               <y>130</y>
+               <width>291</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Calcul des représentations 
+cartographiques</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="onglet4_moda_calcul">
+            <widget class="QWidget" name="widget" native="true">
+             <property name="geometry">
+              <rect>
+               <x>893</x>
+               <y>515</y>
+               <width>121</width>
+               <height>171</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QTextEdit" name="te_notice_indicateurs_2">
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:8.25pt; font-weight:8; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;Modalités de calcul :&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;- indiquer un lien vers la doc&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;+ faire un résumé&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;NB : dans la fonction postgis, on calcule toutes les données ( absolu, pourcentage1, pourcentage2, ...) et c'est le plugin qui choisit qu'est-ce qui est affiché&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;+ lister les données sources disponibles&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="te_notice_indicateurs_5">
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:8.25pt; font-weight:8; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;Disponibilité des données sources :&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;Prévoir une page de vérification de la bonne disponibilité des données sources, avec lien pour l'utilisateur pour charger sa propre donnée. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;Prévoir bouton aide à l'import des données manquantes&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="te_notice_indicateurs_3">
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:8.25pt; font-weight:8; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;Listing en arborescence des indicateurs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;Icônes à droite de l'indicateur : coche verte si modalité de calcul déjà choisie par l'utilisateur, point d'interrogation si choix à faire, icône à définir si choix par défaut sans autre alternative, ...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QGroupBox" name="gb_mise_en_forme_resultats_3">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>540</y>
+               <width>831</width>
+               <height>141</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	border:1px solid black;
+	background-color: rgb(177, 177, 177);
+	font-weight: bold;
+	text-align:center;
+	color: rgb(255, 85, 0);
+}
+
+QComboBox{
+	color:black;
+}
+</string>
+             </property>
+             <property name="title">
+              <string>Calcul des variables &amp; indicateurs</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="2">
+               <widget class="QWidget" name="widget_13" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="horizontalSpacing">
+                  <number>6</number>
+                 </property>
+                 <property name="verticalSpacing">
+                  <number>0</number>
+                 </property>
+                 <item row="2" column="1">
+                  <widget class="QComboBox" name="cb_millesime_gpu"/>
+                 </item>
+                 <item row="3" column="3">
+                  <widget class="QLabel" name="label_16">
+                   <property name="text">
+                    <string>BD TOPO</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="3">
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>Sirene</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="4">
+                  <widget class="QComboBox" name="cb_millesime_rpg"/>
+                 </item>
+                 <item row="3" column="4">
+                  <widget class="QComboBox" name="cb_millesime_bdtopo"/>
+                 </item>
+                 <item row="8" column="4">
+                  <widget class="QComboBox" name="cb_millesime_sirene"/>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>RPG</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>GPU</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string>Adresse premium</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QComboBox" name="cb_millesime_adresse"/>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>INSEE</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QComboBox" name="cb_millesime_insee"/>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>Inao</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="4">
+                  <widget class="QComboBox" name="cb_millesime_inao"/>
+                 </item>
+                 <item row="10" column="0">
+                  <widget class="QCheckBox" name="checkBox_5">
+                   <property name="text">
+                    <string>(Re)calcul des indicateurs</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="1">
+                  <widget class="QCheckBox" name="checkBox_4">
+                   <property name="text">
+                    <string>Affichage des couches dans Qgis</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="3">
+                  <widget class="QPushButton" name="pb_calcul_expert">
+                   <property name="text">
+                    <string>Lancer le calcul</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>971</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget{
+	border:1px solid black;
+	background-color: rgb(177, 177, 177);
+}
+
+QLabel{
+	border:none;
+	font-weight: bold;
+	text-align:center;
+	color: rgb(255, 85, 0);
+}</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QLabel" name="lbl_te_modacalcul">
+                <property name="text">
+                 <string>Territoire d'étude : </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="lbl_typealea_modacalcul">
+                <property name="text">
+                 <string>Type d'aléa : </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="lbl_occ_modacalcul">
+                <property name="text">
+                 <string>Occurence : </string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="widget_8" native="true">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>480</y>
+               <width>1021</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <property name="spacing">
+               <number>30</number>
+              </property>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>670</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_charger_couches_indicateurs">
+                <property name="layoutDirection">
+                 <enum>Qt::RightToLeft</enum>
+                </property>
+                <property name="text">
+                 <string>Charger les couches sélectionnées</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="w_conteneur_page_2" native="true">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>60</y>
+               <width>1031</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_36">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Fonctions de calcul disponibles</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_37">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Indicateurs du point de vue</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_38">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Couches du schéma p_rep_carto</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="w_conteneur_page_3" native="true">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>100</y>
+               <width>1031</width>
+               <height>371</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="w_listing_fonctions_calcul" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_3">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>314</width>
+                      <height>333</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <item>
+                      <layout class="QVBoxLayout" name="lay_listing_fonctions_calcul"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="w_listing_indicateurs_pt_vue" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_5">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>313</width>
+                      <height>333</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_20">
+                     <item>
+                      <layout class="QVBoxLayout" name="lay_listing_indicateurs_pt_vue"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="w_listing_indicateurs" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_6">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_8">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>314</width>
+                      <height>333</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_19">
+                     <item>
+                      <layout class="QVBoxLayout" name="lay_listing_indicateurs"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="onglet5_analyse_resultats">
+            <property name="styleSheet">
+             <string notr="true">*{
+	border: none;
+}
+
+.label_non_souligne {
+	background-color: rgba(255,255,255,255);	
+}
+
+QGroupBox{
+	border:none;
+	background-color: white;
+	font: 14px 'Arial';
+	font-weight: bold;
+	color: rgb(239, 120, 88);
+}
+
+QLabel{
+	border:none;
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+QComboBox{
+	border: none;
+	border-bottom: 1px solid rgba(251, 212, 81, 255);
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);	
+}
+
+QPushButton{
+	background-color: rgba(249,191,144,255);
+	border-radius: 3px;
+	border:2px outset rgb(239, 120, 88);
+	color: rgba(41, 37, 116, 255);
+	font: 11px &quot;Arial&quot;;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+QPushButton:pressed{
+	border:2px inset rgb(239, 120, 88);
+}
+
+QRadioButton{
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+
+QRadioButtfon {
+	background-color: rgb(252,254,252);
+	color: black;
+}
+
+QRadioButton::indicator {
+	width: 11px;
+	height: 11px;
+	border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+	border: 1px solid; 
+	border-color: rgb(239, 120, 88);
+	border-radius: 5px;
+	background-color: white; 
+	width: 11px; 
+	height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+	border: 3px solid; 
+	border-color: white;
+	border-radius: 6px;
+	background-color: rgba(41, 37, 116, 255);
+	width: 7px; 
+	height: 7px; 
+}
+
+QCheckBox:pressed{
+	border:2px inset rgb(239, 120, 88);
+}
+
+QCheckBox{
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-colorr: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+QCheckBox::indicator {
+	width: 11px;
+	height: 11px;
+	border-radius: 1px;
+}
+
+QCheckBox::indicator::unchecked{ 
+	border: 1px solid; 
+	border-color: rgb(239, 120, 88);
+	border-radius: 1px;
+	background-color: white; 
+	width: 11px; 
+	height: 11px; 
+}
+
+QCheckBox::indicator::checked{ 
+	border: 3px solid; 
+	border-color: white;
+	border-radius: 1px;
+	background-color: rgba(41, 37, 116, 255);
+	width: 7px; 
+	height: 7px; 
+}</string>
+            </property>
+            <widget class="QGroupBox" name="gb_mise_en_forme_resultats">
+             <property name="geometry">
+              <rect>
+               <x>430</x>
+               <y>140</y>
+               <width>300</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Calcul des indicateurs</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="checkBox">
+                <property name="text">
+                 <string>Affichage des couches dans Qgis</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="checkBox_2">
+                <property name="text">
+                 <string>(Re)calcul des indicateurs</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pb_calcul_indic">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Charger l'analyse 
+cartographique</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>180</y>
+               <width>1030</width>
+               <height>521</height>
+              </rect>
+             </property>
+             <widget class="QWidget" name="w_dashboard" native="true">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1030</width>
+                <height>450</height>
+               </rect>
+              </property>
+              <widget class="QScrollArea" name="scrollArea_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1030</width>
+                 <height>450</height>
+                </rect>
+               </property>
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>1030</width>
+                  <height>450</height>
+                 </rect>
+                </property>
+                <widget class="QStackedWidget" name="dashboards">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>1030</width>
+                   <height>430</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">*{
+	border: none;
+}
+
+QGroupBox{
+	border:none;
+	background-color: white;
+	font: 14px 'Arial';
+	font-weight: bold;
+	color: rgb(239, 120, 88);
+}
+
+QLabel{
+	border:none;
+	border-bottom:1px dashed rgb(239, 120, 88);
+	font-weight: bold;
+	font: 75 17pt &quot;Arial&quot;;
+	color: rgb(239, 120, 88);
+	background-color: white;
+}
+
+QComboBox{
+	border: none;
+	border-bottom: 1px solid rgba(251, 212, 81, 255);
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);	
+}
+
+QPushButton{
+	background-color:white;
+	borderr: 1px solid rgba(251, 212, 81, 255);
+	border: none;
+	border-radius:15px;
+	margin:0px;
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);	
+}
+
+QPushButton:pressed{
+	border:2px inset rgb(239, 120, 88);
+}
+
+
+</string>
+                 </property>
+                 <property name="currentIndex">
+                  <number>0</number>
+                 </property>
+                 <widget class="QWidget" name="db_sngri">
+                  <widget class="QLabel" name="label_28">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Sécurité des personnes</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_29">
+                   <property name="geometry">
+                    <rect>
+                     <x>370</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Coût des dommages</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_30">
+                   <property name="geometry">
+                    <rect>
+                     <x>720</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Retour à la normale</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QGroupBox" name="gb_mise_en_forme_resultats_2">
+                   <property name="geometry">
+                    <rect>
+                     <x>710</x>
+                     <y>270</y>
+                     <width>300</width>
+                     <height>150</height>
+                    </rect>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::RightToLeft</enum>
+                   </property>
+                   <property name="title">
+                    <string>Documents de synthèse</string>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                     <widget class="QCheckBox" name="checkBox_6">
+                      <property name="layoutDirection">
+                       <enum>Qt::RightToLeft</enum>
+                      </property>
+                      <property name="text">
+                       <string>Générer carte par indicateur</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QCheckBox" name="checkBox_7">
+                      <property name="layoutDirection">
+                       <enum>Qt::RightToLeft</enum>
+                      </property>
+                      <property name="text">
+                       <string>Générer carte de synthèse </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_15">
+                      <property name="text">
+                       <string>Générer cartes du 
+composeur d'impression</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="db_amenagement">
+                  <widget class="QLabel" name="label_35">
+                   <property name="geometry">
+                    <rect>
+                     <x>370</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Economie</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_32">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Population</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_33">
+                   <property name="geometry">
+                    <rect>
+                     <x>720</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Action publique</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="db_crise">
+                  <widget class="QLabel" name="label_39">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Evacuation</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_42">
+                   <property name="geometry">
+                    <rect>
+                     <x>720</x>
+                     <y>0</y>
+                     <width>300</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Relogement</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="slider_temporel" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>460</y>
+                <width>1010</width>
+                <height>50</height>
+               </rect>
+              </property>
+              <widget class="QLabel" name="label_26">
+               <property name="geometry">
+                <rect>
+                 <x>960</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2100</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>170</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2020</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_13">
+               <property name="geometry">
+                <rect>
+                 <x>466</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2050</string>
+               </property>
+              </widget>
+              <widget class="QSlider" name="horizontalSlider">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>10</y>
+                 <width>955</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="value">
+                <number>18</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>269</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2030</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_22">
+               <property name="geometry">
+                <rect>
+                 <x>368</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2040</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_23">
+               <property name="geometry">
+                <rect>
+                 <x>565</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2060</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_24">
+               <property name="geometry">
+                <rect>
+                 <x>664</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2070</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_25">
+               <property name="geometry">
+                <rect>
+                 <x>762</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2080</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_27">
+               <property name="geometry">
+                <rect>
+                 <x>861</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2090</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_34">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2010</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_35">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>30</y>
+                 <width>30</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>2000</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="w_titre_dashboard" native="true">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>380</width>
+               <height>150</height>
+              </rect>
+             </property>
+             <widget class="QLabel" name="label">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>380</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Tableau de bord</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lbl_choix_terr_etude_3">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>60</y>
+                <width>150</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Echelle de synthèse : </string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="cbox_niv_synthese">
+              <property name="geometry">
+               <rect>
+                <x>165</x>
+                <y>60</y>
+                <width>185</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="maxVisibleItems">
+               <number>20</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Commune</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QLabel" name="lbl_choix_terr_etude_4">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>120</y>
+                <width>60</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Secteur :</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="cbox_secteur_etude">
+              <property name="geometry">
+               <rect>
+                <x>100</x>
+                <y>120</y>
+                <width>250</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="maxVisibleItems">
+               <number>20</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Sélectionner le secteur d'étude</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="layout_alea_dashboard_2" native="true">
+             <property name="geometry">
+              <rect>
+               <x>560</x>
+               <y>20</y>
+               <width>481</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <widget class="QLabel" name="lbl_occurrence_dashboard_value">
+              <property name="geometry">
+               <rect>
+                <x>80</x>
+                <y>40</y>
+                <width>311</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="class" stdset="0">
+               <string>label_non_souligne</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lbl_occurrence_dashboard">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>42</y>
+                <width>78</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Occurrence : </string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lbl_type_alea_dashboard_value">
+              <property name="geometry">
+               <rect>
+                <x>80</x>
+                <y>-1</y>
+                <width>311</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>-1</pointsize>
+                <weight>75</weight>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="class" stdset="0">
+               <string>label_non_souligne</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lbl_type_alea_dashboard">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>75</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Type d'aléa : </string>
+              </property>
+             </widget>
+             <widget class="QCheckBox" name="chb_diagrammes">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>80</y>
+                <width>282</width>
+                <height>15</height>
+               </rect>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Charger diagrammes comparatifs</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="onglet6_actions_reduction">
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	border:none;
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0.54 rgba(251, 251, 251, 0), stop:0.541 rgba(251, 212, 81, 255), stop:1 rgba(251, 212, 81, 255));
+}
+
+QComboBox{
+	border: none;
+	border-bottom: 1px solid rgba(251, 212, 81, 255);
+	font: 12px &quot;Arial&quot;;
+	font-weight: bold;
+	color: rgba(41, 37, 116, 255);	
+}</string>
+            </property>
+            <widget class="QWidget" name="w_conteneur_glob_actions" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>50</y>
+               <width>1070</width>
+               <height>670</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="cb_lst_indic_retenus">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>381</width>
+               <height>22</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="onglet7_suivi_actions">
+            <widget class="QWidget" name="widget_12" native="true">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>20</y>
+               <width>571</width>
+               <height>351</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">image: url(:/plugins/plugin_agirisk/medias/Exemple_graphique_avancement_actions.gif);</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="onglet8_aide">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <widget class="QCheckBox" name="mode_expert">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>20</y>
+               <width>111</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Mode expert</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="lbl_nveau_terr_etude_3">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>730</x>
+               <y>680</y>
+               <width>321</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>AgiRisk par le Cerema - V1.0 - Septembre 2023</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pb_lien_site_agirisk_2">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>110</y>
+               <width>731</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">image: url(:/plugins/plugin_agirisk/medias/Logo AgiRiskHD.png);
+background-color: rgb(255, 255, 255);
+border:none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>191</width>
+               <height>71</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pb_lien_mail">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>600</y>
+               <width>1041</width>
+               <height>40</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <weight>1</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Contact : agirisk@cerema.fr</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapCanvas</class>
+   <extends>QWidget</extends>
+   <header>qgis.gui</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.py"/>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+{
+    "geographic_extension": "*.shp *.gpkg *.geojson *.tab",
+    "css_btn_actif": "QPushButton{border: none; background-color:  rgb(41,37,116);color: white;border-radius: 5px;font: 11px 'Arial';font-weight: bold;word-wrap: normal;}",
+    "css_btn_courant": "QPushButton{border: none; background-color:  rgb(239, 120, 88);color: white;border-radius: 5px;font: 11px 'Arial';font-weight: bold;word-wrap: normal;}",
+    "css_btn_inactif": "QPushButton{border: none; background-color:  rgb(201,200,220);color: white;border-radius: 5px;font: 11px 'Arial';font-weight: bold;word-wrap: normal;}"
+}
