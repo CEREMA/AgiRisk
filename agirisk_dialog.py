@@ -63,6 +63,17 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
         self.setWindowFlag(Qt.BypassWindowManagerHint) if 'win' in sys.platform.lower() else None
         self.setWindowFlag(Qt.WindowMinimizeButtonHint, True)
 
+        # Chargement des images
+        self.label_21.setStyleSheet("background-color: rgba(255, 255, 255, 0); background-image: url(:/plugins/plugin_agirisk/medias/PhotoCrueNemoursArnaudBouissouTerra.png)")
+        self.widget_7.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/territoiresfr.png);")
+        self.widget_6.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/personnalisation.png);")
+        self.widget_5.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/analyse.png);")
+        self.widget_11.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/action.gif);")
+        self.widget_4.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/suivi.gif);")
+        self.pb_lien_site_agirisk.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/Logo AgiRisk.png);\nbackground-color: rgb(255, 255, 255);")
+        self.pb_lien_site_agirisk_2.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/Logo AgiRisk.png);\nbackground-color: rgb(255, 255, 255);\nborder:none;")
+        self.widget_12.setStyleSheet("image: url(:/plugins/plugin_agirisk/medias/Exemple_graphique_avancement_actions.gif);")
+
         # Initialisation des ressources
         self.ressources = Ressources(self)
 
@@ -783,7 +794,7 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
                     vlayer.commitChanges()
 
                     # Calcul de l'aléa (dissolve), sauvegarde en base dans zq des nouvelles entités et définition du nouvel aléa en mémoire
-                    self.modele_terr_actif.create_alea(input_terr, input_type_alea, input_occurrence, input_description, vlayer)
+                    self.modele_terr_actif.create_alea(input_terr, input_type_alea, input_code_occurrence, input_description, vlayer)
                     self.modele_terr_actif.def_alea()
                     self.update_alea()
 

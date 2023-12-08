@@ -1,0 +1,1 @@
+Placer ici le contenu du fichier _commun.7z

@@ -17,12 +17,12 @@ if "%InputBdd%"=="" set /p "InputBdd=Saisir nom base (Default "%defaultInputBdd%
 echo %InputBdd%
 
 set "InputLogin=%1"
-set "defaultInputLogin=postgres"
+set "defaultInputLogin=admin_agirisk"
 if "%InputLogin%"=="" set /p "InputLogin=Saisir login (Default "%defaultInputLogin%"): " || set "InputLogin=%defaultInputLogin%"
 echo %InputLogin%
 
 set "InputPwd=%1"
-set "defaultInputPwd=postgres"
+set "defaultInputPwd=AdminRisk*"
 if "%InputPwd%"=="" set /p "InputPwd=Saisir mot de passe (Default "%defaultInputPwd%"): " || set "InputPwd=%defaultInputPwd%"
 echo %InputPwd%
 

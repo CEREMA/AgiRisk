@@ -40,7 +40,7 @@ if [[ $c == "o" ]]; then
 
 	
 	echo "Restauration de la base vierge"
-	psql -h $host -p $port -U $user  -f "_commun/_agirisk_v1.sql" -d postgres
+	psql -h $host -p $port -U $user  -f "_commun/_agirisk_v1.sql" -d postgres -v nom_base=$bdd
 	export PGPASSWORD=AdminRisk*
 	
 	echo "Initialisation des séquences des tables logements et sous-sols"
@@ -71,7 +71,6 @@ if [[ $c == "o" ]]; then
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_alim_zx_fct.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_create_geomloc.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_create_index_concurrently.sql"
-	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_create_millesime.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_drop_index.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_iris2com_epci.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__util_/__util_iris_dep.sql"

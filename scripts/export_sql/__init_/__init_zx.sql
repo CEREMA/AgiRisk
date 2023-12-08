@@ -33,7 +33,7 @@ BEGIN
 		description_alea varchar(254),
 		moda_calc text,
 		date_calc text,
-		geom geometry
+		geom geometry(multipolygon, 2154)
 	)';
 	RAISE NOTICE 'Création de la table zx effectuée';
 

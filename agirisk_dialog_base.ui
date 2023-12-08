@@ -337,9 +337,6 @@ QLabel{
                <height>201</height>
               </rect>
              </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
              <widget class="QLabel" name="label_6">
               <property name="geometry">
                <rect>
@@ -348,9 +345,6 @@ QLabel{
                 <width>181</width>
                 <height>20</height>
                </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
               </property>
               <property name="text">
                <string>Choix du territoire et des aléas</string>
@@ -418,9 +412,6 @@ border-radius: 13px;</string>
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/territoiresfr.png);</string>
               </property>
              </widget>
             </widget>
@@ -518,9 +509,6 @@ border-radius: 13px;</string>
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
-              <property name="styleSheet">
-               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/personnalisation.png);</string>
-              </property>
              </widget>
             </widget>
             <widget class="QWidget" name="gpe_etape3" native="true">
@@ -614,9 +602,6 @@ border-radius: 13px;</string>
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
-              <property name="styleSheet">
-               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/analyse.png);</string>
-              </property>
              </widget>
             </widget>
             <widget class="QWidget" name="gpe_etape4" native="true">
@@ -687,9 +672,6 @@ border-radius: 13px;</string>
                 <height>131</height>
                </rect>
               </property>
-              <property name="styleSheet">
-               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/action.gif);</string>
-              </property>
              </widget>
              <widget class="QPushButton" name="pb_etape4">
               <property name="geometry">
@@ -726,9 +708,6 @@ border-radius: 13px;</string>
                <width>181</width>
                <height>211</height>
               </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
              </property>
              <widget class="QWidget" name="widget_15" native="true">
               <property name="geometry">
@@ -840,9 +819,6 @@ border-radius: 13px;</string>
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
-              <property name="styleSheet">
-               <string notr="true">image: url(:/plugins/plugin_agirisk/medias/suivi.gif);</string>
-              </property>
              </widget>
             </widget>
             <widget class="QPushButton" name="pb_lien_site_cerema">
@@ -877,10 +853,6 @@ border-radius: 13px;</string>
                <height>81</height>
               </rect>
              </property>
-             <property name="styleSheet">
-              <string notr="true">image: url(:/plugins/plugin_agirisk/medias/Logo AgiRiskHD.png);
-background-color: rgb(255, 255, 255);</string>
-             </property>
              <property name="text">
               <string/>
              </property>
@@ -899,10 +871,6 @@ background-color: rgb(255, 255, 255);</string>
                <width>374</width>
                <height>350</height>
               </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgba(255, 255, 255, 0);
-background-image: url(:/plugins/plugin_agirisk/medias/PhotoCrueNemoursArnaudBouissouTerra.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -960,9 +928,6 @@ QPushButton{
                <width>1050</width>
                <height>700</height>
               </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
              </property>
              <property name="title">
               <string>Territoire d'étude et aléa considéré</string>
@@ -2328,9 +2293,6 @@ QPushButton:pressed{
                      <height>31</height>
                     </rect>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true"/>
-                   </property>
                    <property name="text">
                     <string>Sécurité des personnes</string>
                    </property>
@@ -2347,9 +2309,6 @@ QPushButton:pressed{
                      <height>31</height>
                     </rect>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true"/>
-                   </property>
                    <property name="text">
                     <string>Coût des dommages</string>
                    </property>
@@ -2365,9 +2324,6 @@ QPushButton:pressed{
                      <width>300</width>
                      <height>31</height>
                     </rect>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true"/>
                    </property>
                    <property name="text">
                     <string>Retour à la normale</string>
@@ -2808,9 +2764,6 @@ composeur d'impression</string>
                <height>111</height>
               </rect>
              </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
              <widget class="QLabel" name="lbl_occurrence_dashboard_value">
               <property name="geometry">
                <rect>
@@ -2945,15 +2898,9 @@ QComboBox{
                <height>351</height>
               </rect>
              </property>
-             <property name="styleSheet">
-              <string notr="true">image: url(:/plugins/plugin_agirisk/medias/Exemple_graphique_avancement_actions.gif);</string>
-             </property>
             </widget>
            </widget>
            <widget class="QWidget" name="onglet8_aide">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
             <widget class="QCheckBox" name="mode_expert">
              <property name="geometry">
               <rect>
@@ -2994,11 +2941,6 @@ QComboBox{
                <width>731</width>
                <height>431</height>
               </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">image: url(:/plugins/plugin_agirisk/medias/Logo AgiRiskHD.png);
-background-color: rgb(255, 255, 255);
-border:none;</string>
              </property>
              <property name="text">
               <string/>

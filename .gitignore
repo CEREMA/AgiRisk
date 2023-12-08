@@ -16,5 +16,7 @@ resources_rc.py
 agirisk_dialog_base_ui.py
 drvi_dialog_base_ui.py
 classes/log.txt
-/scripts/installation/_commun/**
-/scripts/installation/_dep/**
+/scripts/installation/_commun/*.sql
+/scripts/installation/_commun/*.7z
+/scripts/installation/_dep/*.7z
+/scripts/installation/_dep/d*/**

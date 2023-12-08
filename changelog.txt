@@ -1,0 +1,10 @@
+Changelog:
+
+- [v1.1] 
+    Ajout des répertoires _commun et _dep dans scripts/installation/ pour éviter leur création manuelle par l'utilisateur
+    Correction de la fonction de création de la variable zt pour les communes à arrondissement
+    Réduction du temps de chargement initial du plugin
+    Fix du script bash d'installation / restauration de la base de données sur plateforme Linux 
+    Ajout d'un script bash d'ajout de département sur plateforme Linux
+    Fix paramètre occurrence (--> code_occurrence) lors de l'import d'un nouvel aléa
+
