@@ -110,6 +110,7 @@ BEGIN
 		ON oc7.geom && zx.geom
 		WHERE st_intersects(oc7.geom, zx.geom)
 			AND __util_to_snake_case(oc7.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zx.territoire) IN (''' ||__util_to_snake_case(nom_ter) || ''')
 			AND __util_to_snake_case(zx.code_occurrence) IN (''' ||__util_to_snake_case(code_occ) || ''')
 			AND __util_to_snake_case(zx.type_alea) IN (''' ||__util_to_snake_case(typ_alea) || ''')';
 
@@ -128,7 +129,8 @@ BEGIN
 		FROM oc7
 		JOIN l_subdivide_zx zx
 		ON st_intersects(zx.geom,oc7.geom)
-		WHERE __util_to_snake_case(oc7.territoire) = '''||__util_to_snake_case(nom_ter)||''' 
+		WHERE __util_to_snake_case(oc7.territoire) = '''||__util_to_snake_case(nom_ter)||'''
+			AND __util_to_snake_case(zx.territoire) IN (''' ||__util_to_snake_case(nom_ter) || ''')
 			AND __util_to_snake_case(zx.code_occurrence) IN (''' ||__util_to_snake_case(code_occ) || ''')
 			AND __util_to_snake_case(zx.type_alea) IN (''' ||__util_to_snake_case(typ_alea) || ''')
 		GROUP BY oc7.id

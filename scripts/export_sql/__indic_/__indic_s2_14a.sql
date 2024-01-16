@@ -115,6 +115,7 @@ BEGIN
 		FROM c_occupation_sol.oc0, c_phenomenes.zx
 		WHERE ST_Intersects(oc0.geom, zx.geom)
 			AND __util_to_snake_case(oc0.territoire) = ''' ||__util_to_snake_case(nom_ter) ||'''
+			AND __util_to_snake_case(zx.territoire) = ''' ||__util_to_snake_case(nom_ter) ||'''
 			AND __util_to_snake_case(zx.type_alea) = ''' ||__util_to_snake_case(typ_alea) ||'''
 			AND __util_to_snake_case(zx.code_occurrence) = ''' ||__util_to_snake_case(code_occ) ||'''
 	';
@@ -132,6 +133,7 @@ BEGIN
 		JOIN c_phenomenes.zx
 		ON ST_Intersects(zx.geom, oc0.geom)
 		WHERE __util_to_snake_case(oc0.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zx.territoire) = '''||__util_to_snake_case(nom_ter) ||'''
 			AND __util_to_snake_case(zx.type_alea) = '''||__util_to_snake_case(typ_alea) ||'''
 			AND __util_to_snake_case(zx.code_occurrence) = ''' ||__util_to_snake_case(code_occ) || '''
 		GROUP BY oc0.id';

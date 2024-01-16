@@ -128,6 +128,7 @@ BEGIN
 		JOIN zx
 		ON ST_Intersects(ST_Buffer(oc11.geom, 20), zx.geom)
 		WHERE __util_to_snake_case(oc11.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zx.territoire) IN (''' ||__util_to_snake_case(nom_ter) || ''')
 			AND __util_to_snake_case(zx.code_occurrence) IN (''' ||__util_to_snake_case(code_occ) || ''')
 			AND __util_to_snake_case(zx.type_alea) IN (''' ||__util_to_snake_case(typ_alea) || ''')
 			AND oc11.type_etab = ''ERP''

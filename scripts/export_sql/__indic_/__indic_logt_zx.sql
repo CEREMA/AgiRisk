@@ -105,6 +105,7 @@ BEGIN
 		JOIN zx
 		ON ST_Intersects(oc1.geom, zx.geom)
 		WHERE __util_to_snake_case(oc1.territoire) = '''||__util_to_snake_case(nom_ter)||'''
+			AND __util_to_snake_case(zx.territoire) = '''||__util_to_snake_case(nom_ter)||'''
 			AND __util_to_snake_case(zx.type_alea) = '''||__util_to_snake_case(typ_alea)||'''
 			AND __util_to_snake_case(zx.code_occurrence) = '''||__util_to_snake_case(code_occ)||'''
 			AND oc1.oc2 is true
