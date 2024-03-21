@@ -104,12 +104,12 @@ BEGIN
 			''indéterminé''::varchar(200) AS loc_zx,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))
 			END,
 			1 AS valid_result,
@@ -167,12 +167,12 @@ BEGIN
 			pop_agee_zx.loc_zx,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))
 			END,
 			1 AS valid_result,
@@ -218,12 +218,12 @@ BEGIN
 			pop_agee_zx.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric
 			END AS pop1_agee_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric
 			END AS pop1_agee_out
 		FROM pop_agee_zx
@@ -304,12 +304,12 @@ BEGIN
 			pop_agee_zx.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric
 			END AS pop1_agee_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric
 			END AS pop1_agee_out
 		FROM pop_agee_zx
@@ -416,12 +416,12 @@ BEGIN
 			pop_agee_zx.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric
 			END AS pop1_agee_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric > 0
-				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 10 THEN 10
+				AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric
 			END AS pop1_agee_out
 		FROM pop_agee_zx
@@ -492,12 +492,12 @@ BEGIN
 				pop_agee_zx.moda_calc,
 				CASE
 					WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric > 0
-					AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 10 THEN 10
+					AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''In''),0))::numeric
 				END AS pop1_agee_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric > 0
-					AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 10 THEN 10
+					AND CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(pop_agee_zx.pop1_agee) FILTER (WHERE pop_agee_zx.loc_zx = ''Out''),0))::numeric
 				END AS pop1_agee_out
 			FROM pop_agee_zx

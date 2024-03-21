@@ -108,12 +108,12 @@ BEGIN
 			''indéterminé''::varchar(30) AS loc_zx,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CEIL(COALESCE(SUM(s3_1a.pop2_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)),
@@ -122,52 +122,52 @@ BEGIN
 			CEIL(COALESCE(SUM(s3_1a.pop2_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)),
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			1,
@@ -228,12 +228,12 @@ BEGIN
 			s3_1a.loc_zx,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CEIL(COALESCE(SUM(s3_1a.pop2_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)),
@@ -242,52 +242,52 @@ BEGIN
 			CEIL(COALESCE(SUM(s3_1a.pop2_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)),
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END,
 			1,
@@ -333,12 +333,12 @@ BEGIN
 			s3_1a.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop1_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop1_out,
 			CEIL(COALESCE(SUM(s3_1a.pop2_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) AS pop2_haut_in,
@@ -347,52 +347,52 @@ BEGIN
 			CEIL(COALESCE(SUM(s3_1a.pop2_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) AS pop2_bas_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop3_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop3_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop4_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop4_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop5_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop5_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop6_haut_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop6_bas_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop6_haut_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop6_bas_out
 		FROM s3_1a
@@ -481,12 +481,12 @@ BEGIN
 			s3_1a.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop1_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop1_out,
 			CEIL(COALESCE(SUM(s3_1a.pop2_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) AS pop2_haut_in,
@@ -495,52 +495,52 @@ BEGIN
 			CEIL(COALESCE(SUM(s3_1a.pop2_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) AS pop2_bas_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop3_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop3_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop4_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop4_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop5_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop5_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop6_haut_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 			END AS pop6_bas_in,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))  > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))  < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))  < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) 
 			END AS pop6_haut_out,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 			END AS pop6_bas_out
 		FROM s3_1a
@@ -654,12 +654,12 @@ BEGIN
 				s3_1a.moda_calc,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop1_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop1_out,
 				CEIL(COALESCE(SUM(s3_1a.pop2_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) AS pop2_haut_in,
@@ -668,52 +668,52 @@ BEGIN
 				CEIL(COALESCE(SUM(s3_1a.pop2_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) AS pop2_bas_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop3_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop3_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop4_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop4_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop5_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop5_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop6_haut_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop6_bas_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop6_haut_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop6_bas_out
 			FROM s3_1a
@@ -792,12 +792,12 @@ BEGIN
 				s3_1a.moda_calc,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop1_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop1) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop1_out,
 				CEIL(COALESCE(SUM(s3_1a.pop2_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) AS pop2_haut_in,
@@ -806,52 +806,52 @@ BEGIN
 				CEIL(COALESCE(SUM(s3_1a.pop2_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) AS pop2_bas_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop3_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop3) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop3_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop4_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop4) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop4_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop5_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop5) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop5_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop6_haut_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''In''),0))
 				END AS pop6_bas_in,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_haut) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop6_haut_out,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s3_1a.pop6_bas) FILTER (WHERE s3_1a.loc_zx = ''Out''),0))
 				END AS pop6_bas_out
 			FROM s3_1a

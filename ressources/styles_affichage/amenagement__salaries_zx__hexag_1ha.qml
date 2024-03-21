@@ -3,8 +3,8 @@
   <renderer-v2 symbollevels="0" referencescale="-1" forceraster="0" enableorderby="0" type="RuleRenderer">
     <rules key="{c6400622-29e5-4384-b6f7-be4a3e2aacb6}">
       <rule label="Pas de données d'occupation" symbol="0" key="{71f0e273-c14d-4b3b-9d45-48615f466043}" filter=" &quot;pop2_haut_in&quot;  is null"/>
-      <rule label="&lt; 10 salariés" symbol="1" key="{b333d196-e9f9-412e-a38a-c4f651662446}" filter=" &quot;pop2_haut_in&quot;  > 0.0000 AND   &quot;pop2_haut_in&quot; &lt; 10.0000"/>
-      <rule label="Entre 10 et 50 salariés" symbol="2" key="{b45c57ac-53fe-4c74-8da8-700877ee6d30}" filter=" &quot;pop2_haut_in&quot; >= 10.0000 AND   &quot;pop2_haut_in&quot;&lt; 50.0000"/>
+      <rule label="&lt; 11 salariés" symbol="1" key="{b333d196-e9f9-412e-a38a-c4f651662446}" filter=" &quot;pop2_haut_in&quot;  > 0.0000 AND   &quot;pop2_haut_in&quot; &lt; 11.0000"/>
+      <rule label="Entre 11 et 50 salariés" symbol="2" key="{b45c57ac-53fe-4c74-8da8-700877ee6d30}" filter=" &quot;pop2_haut_in&quot; >= 11.0000 AND   &quot;pop2_haut_in&quot;&lt; 50.0000"/>
       <rule label="Entre 50 et 150 salariés" symbol="3" key="{dd09939e-d96a-4eb7-a849-aea979c11ca2}" filter=" &quot;pop2_haut_in&quot; >= 50.0000 AND   &quot;pop2_haut_in&quot;  &lt; 150.0000"/>
       <rule label="Entre 150 et 300 salariés" symbol="4" key="{97c16f4d-8102-4a09-9f24-067bcf0d7e0b}" filter=" &quot;pop2_haut_in&quot;  >= 150.0000 AND   &quot;pop2_haut_in&quot;  &lt; 300.0000"/>
       <rule label="Enre 300 et 500 salariés" symbol="5" key="{ce5ccaf4-ed82-4c80-bb16-56d22e147c6b}" filter=" &quot;pop2_haut_in&quot;  >= 300.0000 AND   &quot;pop2_haut_in&quot; &lt; 500.0000 "/>

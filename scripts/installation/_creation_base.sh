@@ -150,7 +150,6 @@ if [[ $c == "o" ]]; then
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc11.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc1_geom.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc1_geomloc.sql"
-	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc1_moda.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc2_amc.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc3.sql"
 	psql -U admin_agirisk -d $bdd -q -h $host -p $port -f "../export_sql/__var_/__var_oc5.sql"

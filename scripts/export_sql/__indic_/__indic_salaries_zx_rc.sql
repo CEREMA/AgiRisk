@@ -107,22 +107,22 @@ BEGIN
 				''indéterminé''::varchar(30) AS loc_zx,
 				CASE
 					WHEN CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''In''),0))
 				END,
 				CASE
 					WHEN CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''In''),0)) > 0
-					AND CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''In''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''In''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''In''),0))
 				END,
 				CASE
 					WHEN CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(salaries_zx.pop2_bas) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0))
 				END,
 				CASE
 					WHEN CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(salaries_zx.pop2_haut) FILTER (WHERE salaries_zx.loc_zx = ''Out''),0))
 				END,
 				1,

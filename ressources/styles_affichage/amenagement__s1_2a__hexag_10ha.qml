@@ -2,8 +2,8 @@
 <qgis simplifyDrawingHints="1" version="3.22.6-Białowieża" styleCategories="Symbology|Labeling|Rendering" simplifyDrawingTol="1" maxScale="0" hasScaleBasedVisibilityFlag="0" minScale="100000000" labelsEnabled="0" simplifyLocal="1" simplifyMaxScale="1" symbologyReferenceScale="-1" simplifyAlgorithm="0">
   <renderer-v2 forceraster="0" referencescale="-1" type="RuleRenderer" symbollevels="0" enableorderby="0">
     <rules key="{720deb60-c682-4ba7-b14e-cd39ad73e517}">
-      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 0.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 10.0000" label="Moins de 10 occupants" symbol="0" key="{33629032-f045-4fbc-bc1d-473e0bbbba1e}"/>
-      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 10.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 30.0000" label="Entre 10 et 30 occupants" symbol="1" key="{4a0af879-eac4-4205-9a95-f032653a1cbf}"/>
+      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 0.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 11.0000" label="Moins de 11 occupants" symbol="0" key="{33629032-f045-4fbc-bc1d-473e0bbbba1e}"/>
+      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 11.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 30.0000" label="Entre 11 et 30 occupants" symbol="1" key="{4a0af879-eac4-4205-9a95-f032653a1cbf}"/>
       <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 30.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 50.0000" label="Entre 30 et 50 occupants" symbol="2" key="{7ee2c3a5-19bd-4f87-9448-76c4886bbbff}"/>
       <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 50.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 100.0000" label="Entre 50 et 100 occupants" symbol="3" key="{1c96ce93-94bd-426a-8bbc-72a75344859b}"/>
       <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 100.0000" label="Plus de 100 occupants" symbol="4" key="{59f1b95c-f6bd-40b1-b226-aaa36b8cc29e}"/>

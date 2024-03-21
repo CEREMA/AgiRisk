@@ -3,8 +3,8 @@
   <renderer-v2 symbollevels="0" referencescale="-1" forceraster="0" enableorderby="0" type="RuleRenderer">
     <rules key="{c6400622-29e5-4384-b6f7-be4a3e2aacb6}">
       <rule label="Pas de données sur la population" symbol="0" key="{71f0e273-c14d-4b3b-9d45-48615f466043}" filter="  &quot;pop1_agee_in&quot; is null"/>
-      <rule label="&lt; 10 occupants" symbol="1" key="{b333d196-e9f9-412e-a38a-c4f651662446}" filter=" &quot;pop1_agee_in&quot; > 0.0000 AND  &quot;pop1_agee_in&quot; &lt; 10.0000"/>
-      <rule label="Entre 10 et 50 occupants" symbol="2" key="{b45c57ac-53fe-4c74-8da8-700877ee6d30}" filter=" &quot;pop1_agee_in&quot; >= 10.0000 AND  &quot;pop1_agee_in&quot; &lt; 50.0000"/>
+      <rule label="&lt; 11 occupants" symbol="1" key="{b333d196-e9f9-412e-a38a-c4f651662446}" filter=" &quot;pop1_agee_in&quot; > 0.0000 AND  &quot;pop1_agee_in&quot; &lt; 11.0000"/>
+      <rule label="Entre 11 et 50 occupants" symbol="2" key="{b45c57ac-53fe-4c74-8da8-700877ee6d30}" filter=" &quot;pop1_agee_in&quot; >= 11.0000 AND  &quot;pop1_agee_in&quot; &lt; 50.0000"/>
       <rule label="Entre 50 et 100 occupants" symbol="3" key="{dd09939e-d96a-4eb7-a849-aea979c11ca2}" filter=" &quot;pop1_agee_in&quot; >= 50.0000 AND  &quot;pop1_agee_in&quot;  &lt; 100.0000"/>
       <rule label="Entre 100 et 300 occupants" symbol="4" key="{97c16f4d-8102-4a09-9f24-067bcf0d7e0b}" filter=" &quot;pop1_agee_in&quot;  >= 100.0000 AND  &quot;pop1_agee_in&quot;  &lt; 300.0000"/>
       <rule label="Entre 300 et 500 occupants" symbol="5" key="{55366dd7-d3d8-4970-8d7d-1565431b3fc6}" filter=" &quot;pop1_agee_in&quot;  >= 300.0000 AND  &quot;pop1_agee_in&quot;  &lt; 500.0000"/>

@@ -11,3 +11,8 @@ Changelog:
 - [hotfix 16.01.2024]
     Ajout filtre sur zx.territoire pour éviter les doublons dans calcul indicateurs logt_zx, pop_agee_zx, s2_14a, s3_1f, s3_2b et salaries_zx
 
+- [hotfix 21.03.2024]
+    Suppression de la re-création d'index dans la variable oc3 (générait des erreurs de calcul à l'exécution de plusieurs territoires)
+    Suppression des anciennes versions de scripts de calcul
+    Correction des arrondis relatifs au secret statistique (seuil à 11)
+

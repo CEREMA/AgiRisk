@@ -602,10 +602,6 @@ BEGIN
 	--************************************************************************
 	GET DIAGNOSTICS c = row_count;
 
-	EXECUTE 'CREATE INDEX ON oc1 USING btree(pop2_bas)';
-	EXECUTE 'CREATE INDEX ON oc1 USING btree(pop2_haut)';
-	EXECUTE 'CREATE INDEX ON oc1 USING btree(oc3)';
-
 	heure11 = clock_timestamp();
 	RAISE NOTICE 'Durée totale des requêtes de mise à jour des champs oc3, pop2_bas et pop2_haut de la table oc1 : %', CAST(heure11 as time)-CAST(heure10 as time);
 

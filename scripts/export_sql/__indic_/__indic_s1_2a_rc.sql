@@ -105,17 +105,17 @@ BEGIN
 			''indéterminé''::varchar(200) AS loc_zq,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0))
 			END,
 			1,
@@ -173,17 +173,17 @@ BEGIN
 			s1_2a.loc_zq,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0))
 			END,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0))
 			END,
 			1,
@@ -230,17 +230,17 @@ BEGIN
 			s1_2a.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0))
 			END AS pop6_pp_in_fort_tresfort,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0))
 			END AS pop6_pp_in_fai_moyen,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0))
 			END AS pop6_pp_out_zq
 		FROM s1_2a
@@ -323,17 +323,17 @@ BEGIN
 			s1_2a.moda_calc,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0))
 			END AS pop6_pp_in_fort_tresfort,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0))
 			END AS pop6_pp_in_fai_moyen,
 			CASE
 				WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) > 0
-				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 10 THEN 10
+				AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 11 THEN 11
 				ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0))
 			END AS pop6_pp_out_zq
 		FROM s1_2a
@@ -441,17 +441,17 @@ BEGIN
 				s1_2a.moda_calc,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) > 0
-					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0))
 				END AS pop6_pp_in_fort_tresfort,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) > 0
-					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0))
 				END AS pop6_pp_in_fai_moyen,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0))
 				END AS pop6_pp_out_zq
 			FROM s1_2a
@@ -524,17 +524,17 @@ BEGIN
 				s1_2a.moda_calc,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) > 0
-					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In fort'' or s1_2a.loc_zq = ''In très fort''),0))
 				END AS pop6_pp_in_fort_tresfort,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) > 0
-					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''In faible'' or s1_2a.loc_zq = ''In moyen''),0))
 				END AS pop6_pp_in_fai_moyen,
 				CASE
 					WHEN CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) > 0
-					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 10 THEN 10
+					AND CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0)) < 11 THEN 11
 					ELSE CEIL(COALESCE(SUM(s1_2a.pop6_pp) FILTER (WHERE s1_2a.loc_zq = ''Out''),0))
 				END AS pop6_pp_out_zq
 			FROM s1_2a

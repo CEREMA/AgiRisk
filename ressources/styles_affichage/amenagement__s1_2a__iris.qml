@@ -3,8 +3,8 @@
   <renderer-v2 forceraster="0" referencescale="-1" type="RuleRenderer" symbollevels="0" enableorderby="0">
     <rules key="{434a2f2a-05b9-4c90-98d5-22cb8fec7e2c}">
       <rule filter=" &quot;pop6_rdc_in_fort_tresfort&quot; = 0" label="Aucun occupant" symbol="0" key="{e5ba44e1-35a8-43a7-852f-72c857eb07cb}"/>
-      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 0.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 10.0000" label="Moins de 10 occupants" symbol="1" key="{55d0bce7-bcd2-4389-8677-ad6190e00827}"/>
-      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 10.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 30.0000" label="Entre 10 et 30 occupants" symbol="2" key="{704e16a2-b9ae-4e11-919c-833c7167248b}"/>
+      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 0.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 11.0000" label="Moins de 11 occupants" symbol="1" key="{55d0bce7-bcd2-4389-8677-ad6190e00827}"/>
+      <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 11.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 30.0000" label="Entre 11 et 30 occupants" symbol="2" key="{704e16a2-b9ae-4e11-919c-833c7167248b}"/>
       <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 30.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 50.0000" label="Entre 30 et 50 occupants" symbol="3" key="{f9d945b6-fe64-4981-a040-c33b70f2875e}"/>
       <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 50.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 100.0000" label="Entre 50 et 100 occupants" symbol="4" key="{6e9960e2-97f8-46d4-bc5a-c43bef89be09}"/>
       <rule filter="&quot;pop6_rdc_in_fort_tresfort&quot; > 100.0000 AND &quot;pop6_rdc_in_fort_tresfort&quot; &lt;= 200.0000" label="Entre 100 et 200 occupants" symbol="5" key="{1a2dd4b7-215d-494e-bc97-771560e257ad}"/>
