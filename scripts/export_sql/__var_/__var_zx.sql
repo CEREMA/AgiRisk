@@ -61,7 +61,10 @@ BEGIN
 			st_multi(ST_Union(geom))
 		FROM c_phenomenes.zq
 		WHERE __util_to_snake_case(territoire) = '''||__util_to_snake_case(nom_ter)||'''
-		GROUP BY territoire, type_alea, occurrence, code_occurrence, description_alea
+			AND __util_to_snake_case(type_alea) = '''||__util_to_snake_case(typ_alea)||'''
+			AND __util_to_snake_case(code_occurrence) = '''||__util_to_snake_case(code_occ)||'''
+		GROUP BY
+ territoire, type_alea, occurrence, code_occurrence, description_alea
 	';
 
 	--************************************************************************

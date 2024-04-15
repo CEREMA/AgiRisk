@@ -8,11 +8,13 @@ Changelog:
     Ajout d'un script bash d'ajout de département sur plateforme Linux
     Fix paramètre occurrence (--> code_occurrence) lors de l'import d'un nouvel aléa
 
-- [hotfix 16.01.2024]
+- [hotfix 16.01.2024] [exécution nécessaire de _creation_base.bat]
     Ajout filtre sur zx.territoire pour éviter les doublons dans calcul indicateurs logt_zx, pop_agee_zx, s2_14a, s3_1f, s3_2b et salaries_zx
 
-- [hotfix 21.03.2024]
+- [hotfix 21.03.2024] [exécution nécessaire de _creation_base.bat]
     Suppression de la re-création d'index dans la variable oc3 (générait des erreurs de calcul à l'exécution de plusieurs territoires)
     Suppression des anciennes versions de scripts de calcul
     Correction des arrondis relatifs au secret statistique (seuil à 11)
 
+- [hotfix 15.04.2024] [exécution nécessaire de _creation_base.bat]
+    Correction de doublons de calcul : filtrage sur type_alea et code_occurrence dans var_zx
