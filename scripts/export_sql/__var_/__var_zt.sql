@@ -103,7 +103,7 @@ BEGIN
 					ELSE iris.nom_com || '' - '' || iris.nom_iris
 				END AS libelle,
 				iris.insee_com AS id_commune,
-				commune.siren_epci AS id_epci,
+				right(commune.siren_epci,9) AS id_epci, 
 				commune.insee_dep AS id_dpt,
 				commune.insee_reg AS id_region,
 				''IRIS GE IGN '||an_iris||', BD TOPO IGN '||an_bdtopo||''' AS sce_donnee,
