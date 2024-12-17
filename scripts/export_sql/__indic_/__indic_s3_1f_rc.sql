@@ -132,7 +132,8 @@ BEGIN
 				ON right(s3_1f.moda_calc,5) = niv_zoom.code_indic
 				RIGHT JOIN zt
 				ON s3_1f.id_iris = zt.id_iris
-				WHERE __util_to_snake_case(s3_1f.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+				WHERE __util_to_snake_case(zt.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+					AND __util_to_snake_case(s3_1f.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
 					AND __util_to_snake_case(s3_1f.type_alea) = ''' ||__util_to_snake_case(typ_alea) || '''
 	 				AND __util_to_snake_case(s3_1f.code_occurrence) = ''' ||__util_to_snake_case(code_occ) || '''
 					AND niv_zoom.niv_zoom = 0

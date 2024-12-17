@@ -1,20 +1,23 @@
-rem/***************************************************************************
-rem        Plugin du projet AgiRisk
-rem        begin                : 2022-04-06
-rem        copyright            : (C) 2023 by Cerema
-rem        email                : agirisk@cerema.fr
-rem***************************************************************************/
+rem /***************************************************************************
+rem         Plugin du projet AgiRisk
+rem         begin                : 2022-04-06
+rem         copyright            : (C) 2023 by Cerema
+rem         email                : agirisk@cerema.fr
+rem ***************************************************************************/
 
-rem/***************************************************************************
-rem*                                                                         *
-rem*   Ce programme est un logiciel libre, distribué selon les termes de la  *
-rem*   licence CeCILL v2.1 disponible à l'adresse suivante :                 *
-rem*   http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html           *
-rem*   ou toute autre version ultérieure.                                    *
-rem*                                                                         *
-rem***************************************************************************/
+rem /***************************************************************************
+rem *                                                                         *
+rem *   Ce programme est un logiciel libre, distribué selon les termes de la  *
+rem *   licence CeCILL v2.1 disponible à l'adresse suivante :                 *
+rem *   http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html           *
+rem *   ou toute autre version ultérieure.                                    *
+rem *                                                                         *
+rem ***************************************************************************/
 
 @echo off
+chcp 65001
+
+
 path=%path%;C:\Program Files\PostgreSQL\15\bin
 
 set "InputServ=%1"

@@ -21,3 +21,6 @@ Changelog:
 
 - [hotfix 02.05.2024] [exécution nécessaire de _creation_base.bat]
     Correction de bug généré dans le calcul de var_zt lorsque plusieurs EPCI se superposent 
+
+- [hotfix 17.12.2024] [exécution nécessaire de _creation_base.bat]
+    Correction de bug qui conduisait à sommer plusieurs fois des indicateurs (Montant des dommages aux cultures, Zones à urbaniser inondables, Surfaces agricoles inondables)

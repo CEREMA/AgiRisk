@@ -143,6 +143,7 @@ BEGIN
 				WHERE __util_to_snake_case(s2_6a.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
 					AND __util_to_snake_case(s2_6a.type_alea) = ''' ||__util_to_snake_case(typ_alea) || '''
 	 				AND __util_to_snake_case(s2_6a.code_occurrence) = ''' ||__util_to_snake_case(code_occ) || '''
+					AND __util_to_snake_case(zt.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
 					AND niv_zoom.niv_zoom = 0
 				GROUP BY s2_6a.code_rpg, s2_6a.territoire, s2_6a.type_alea, s2_6a.code_occurrence, niv_zoom.type_result, id_geom, s2_6a.nom_iris, s2_6a.date_actu_cout_dmg, s2_6a.date_calc';
 			
