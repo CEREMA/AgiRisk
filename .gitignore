@@ -20,3 +20,4 @@ classes/log.txt
 /scripts/installation/_commun/*.7z
 /scripts/installation/_dep/*.7z
 /scripts/installation/_dep/d*/**
+/resultats/

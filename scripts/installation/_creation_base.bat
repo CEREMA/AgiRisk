@@ -15,8 +15,6 @@ rem *                                                                         *
 rem ***************************************************************************/
 
 @echo off
-chcp 65001
-
 
 path=%path%;C:\Program Files\PostgreSQL\15\bin
 
