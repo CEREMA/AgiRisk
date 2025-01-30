@@ -27,3 +27,7 @@ Changelog:
 
 - [hotfix 20.12.2024] 
     Revert de la gestion des accents dans la fenêtre d'installation de la base par chcp 65001, qui pose problème sur certaines installations Windows
+
+- [hotfix 30.01.2025]
+    Correction de l'import de couche d'aléa qui posait problème lors de correction de géométries invalides
+    Fusion des boutons de calculs des variables, indicateurs et représentations cartographiques

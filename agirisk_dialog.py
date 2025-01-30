@@ -246,8 +246,6 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
 
         # Changement des couleurs des boutons de lancement des calculs (var, indicateurs, représentation cartographiques)
         self.pb_var_all.setStyleSheet(self.ressources.css_bt_calcul_indic['non_lance'])
-        self.pb_indic_all.setStyleSheet(self.ressources.css_bt_calcul_indic['non_lance'])
-        self.pb_indic_rc_all.setStyleSheet(self.ressources.css_bt_calcul_indic['non_lance'])
 
         # Initialisation de l'onglet modalités de calcul
         self.init_rep_carto_dispos_en_base()
@@ -449,9 +447,7 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
         for pt_vue in self.ressources.liste_pts_vue:
             self.pts_vue[pt_vue]['w_arborescence'].toggled.connect(self.changer_pt_vue)
         
-        self.pb_var_all.clicked.connect(self.lancer_calcul_variables)
-        self.pb_indic_all.clicked.connect(self.lancer_calcul_indicateurs)
-        self.pb_indic_rc_all.clicked.connect(self.lancer_calcul_rep_carto)
+        self.pb_var_all.clicked.connect(self.lancer_calculs)
 
         ##########################################################################################################
         # Section Modalités de calcul
@@ -859,16 +855,8 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
         variables_calculees, indicateurs_calcules, rep_carto_calculees = self.bdd.recup_statut_calculs(self.modele_terr_actif.terr)
 
         self.pb_var_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule']) if variables_calculees else self.pb_var_all.setStyleSheet(self.ressources.css_bt_calcul_indic['non_lance'])
-        self.pb_var_all.setText('Variables déjà calculées') if variables_calculees else self.pb_var_all.setText('Lancer calcul des variables')
+        self.pb_var_all.setText('Calculs déjà effectués') if variables_calculees else self.pb_var_all.setText('Lancer le calcul des :\n- variables\n- indicateurs\n- représentations\ncartographiques')
         self.pb_var_all.setEnabled(not variables_calculees)
-
-        self.pb_indic_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule']) if indicateurs_calcules else self.pb_indic_all.setStyleSheet(self.ressources.css_bt_calcul_indic['non_lance'])
-        self.pb_indic_all.setText('Indicateurs déjà calculés') if indicateurs_calcules else self.pb_indic_all.setText('Lancer calcul des indicateurs')
-        self.pb_indic_all.setEnabled(not indicateurs_calcules and variables_calculees)
-
-        self.pb_indic_rc_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule']) if rep_carto_calculees else self.pb_indic_rc_all.setStyleSheet(self.ressources.css_bt_calcul_indic['non_lance'])
-        self.pb_indic_rc_all.setText('Représentations cartographiques\ndéjà calculées') if rep_carto_calculees else self.pb_indic_rc_all.setText('Calcul des représentations\ncartographiques')
-        self.pb_indic_rc_all.setEnabled(not rep_carto_calculees and indicateurs_calcules)
 
 
     def mettre_a_jour_dispo_rep_carto_en_base(self):
@@ -1056,7 +1044,7 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
         self.affiche_page("choix_indic")
     
 
-    def lancer_calcul_variables(self):
+    def lancer_calculs(self):
         '''Méthode appelée lorsque l'utilisateur clique sur le bouton "Calculer les variables" de l'onglet Modalités de calcul'''
         # On affiche d'abord un avertissement expliquant que le calcul peut être long. Si l'utilisateur choisit de poursuivre, on lance le calcul
         msgBox = QMessageBox()
@@ -1073,88 +1061,49 @@ class AGIRISKDialog(QtWidgets.QDialog, FORM_CLASS):
         self.fenetre_log.setWindowTitle("Log d'exécution --> Enregistré dans le dossier parametres_locaux/logs/")
         self.fenetre_log.resize(800, 600)
         self.fenetre_log.setLayout(QVBoxLayout())
-        textedit_log = QTextEdit("LANCEMENT DU CALCUL DE L'ENSEMBLE DES VARIABLES")
-        self.fenetre_log.layout().addWidget(textedit_log)
+        self.textedit_log = QTextEdit("LANCEMENT DU CALCUL DE L'ENSEMBLE DES VARIABLES, INDICATEURS et REPRESENTATIONS CARTOGRAPHIQUES")
+        self.fenetre_log.layout().addWidget(self.textedit_log)
         self.fenetre_log.show()
         log_exec = self.modele_terr_actif.lancement_calcul_bdd("pt_vue", '__var_all')
         if log_exec:
-            # On affiche le retour d'exécution dans un nouvelle fenêtre, à laquelle est ajoutée un QTextEdit
             for ligne in log_exec:
                 log = ligne.split("\n")[0].replace("NOTICE:  ", "")
-                textedit_log.append(f"{log}")
+                self.textedit_log.append(f"{log}")
             self.fenetre_log.setFocus()
-            # Une fois le calcul effectué, on désactive le bouton et on change l'affichage pour qu'il soit en vert
-            self.pb_var_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule'])
-            self.pb_var_all.setText('Variables calculées')
-            self.pb_var_all.setEnabled(False)
-            self.pb_indic_all.setEnabled(True)
+
+            self.lancer_calcul_indicateurs()
 
     
     def lancer_calcul_indicateurs(self):
         '''Méthode appelée lorsque l'utilisateur clique sur le bouton "Calculer les indicateurs" de l'onglet Modalités de calcul'''
-        # On affiche d'abord un avertissement expliquant que le calcul peut être long. Si l'utilisateur choisit de poursuivre, on lance le calcul
-        msgBox = QMessageBox()
-        msgBox.setWindowTitle("Lancement du calcul des indicateurs")
-        msgBox.setText("Le calcul des indicateurs peut être long (~35 min pour 2 aléas sur un territoire à dominante urbaine [~50 communes / ~800 km²]). \n\nAssurez-vous d'avoir importé tous les aléas sur le territoire\n(le calcul n'est possible qu'une fois à partir du plugin)\n\nVoulez-vous poursuivre ?")
-        msgBox.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        msgBox.setDefaultButton(QMessageBox.No)
-        retour = msgBox.exec_()
-        if retour == QMessageBox.No:
-            return None
         
-        # On affiche le retour d'exécution dans un nouvelle fenêtre, à laquelle est ajoutée un QTextEdit
-        self.fenetre_log = QDialog()
-        self.fenetre_log.setWindowTitle("Log d'exécution --> Enregistré dans le dossier parametres_locaux/logs/")
-        self.fenetre_log.resize(800, 600)
-        self.fenetre_log.setLayout(QVBoxLayout())
-        textedit_log = QTextEdit("LANCEMENT DU CALCUL DE L'ENSEMBLE DES INDICATEURS")
-        self.fenetre_log.layout().addWidget(textedit_log)
-        self.fenetre_log.show()
         log_exec = self.modele_terr_actif.lancement_calcul_bdd("pt_vue", '__indic_all')
         if log_exec:
             # On affiche le retour d'exécution dans un nouvelle fenêtre, à laquelle est ajoutée un QTextEdit
             for ligne in log_exec:
                 log = ligne.split("\n")[0].replace("NOTICE:  ", "")
-                textedit_log.append(f"{log}")
+                self.textedit_log.append(f"{log}")
             self.fenetre_log.setFocus()
-            # Une fois le calcul effectué, on désactive le bouton et on change l'affichage pour qu'il soit en vert
-            self.pb_indic_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule'])
-            self.pb_indic_all.setText('Indicateurs calculés')
-            self.pb_indic_all.setEnabled(False)
-            self.pb_indic_rc_all.setEnabled(True)
+
+            self.lancer_calcul_rep_carto()
+
 
 
     def lancer_calcul_rep_carto(self):
         '''Méthode appelée lorsque l'utilisateur clique sur le bouton "Calculer les représentations cartographiques" de l'onglet Modalités de calcul'''
-        # On affiche d'abord un avertissement expliquant que le calcul peut être long. Si l'utilisateur choisit de poursuivre, on lance le calcul
-        msgBox = QMessageBox()
-        msgBox.setWindowTitle("Lancement du calcul des représentations cartographiques")
-        msgBox.setText("Le calcul des représentations cartographiques peut être long (~25 min pour 2 aléas sur un territoire à dominante urbaine [~50 communes / ~800 km²]). \nVoulez-vous poursuivre ?")
-        msgBox.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        msgBox.setDefaultButton(QMessageBox.No)
-        retour = msgBox.exec_()
-        if retour == QMessageBox.No:
-            return None
         
-        # On affiche le retour d'exécution dans un nouvelle fenêtre, à laquelle est ajoutée un QTextEdit
-        self.fenetre_log = QDialog()
-        self.fenetre_log.setWindowTitle("Log d'exécution --> Enregistré dans le dossier parametres_locaux/logs/")
-        self.fenetre_log.resize(800, 600)
-        self.fenetre_log.setLayout(QVBoxLayout())
-        textedit_log = QTextEdit("LANCEMENT DU CALCUL DE L'ENSEMBLE DES REPRESENTATIONS CARTOGRAHIQUES")
-        self.fenetre_log.layout().addWidget(textedit_log)
-        self.fenetre_log.show()
         log_exec = self.modele_terr_actif.lancement_calcul_bdd("pt_vue", '__indic_rc_all')
         if log_exec:
             # On affiche le retour d'exécution dans un nouvelle fenêtre, à laquelle est ajoutée un QTextEdit
             for ligne in log_exec:
                 log = ligne.split("\n")[0].replace("NOTICE:  ", "")
-                textedit_log.append(f"{log}")
+                self.textedit_log.append(f"{log}")
             self.fenetre_log.setFocus()
+
             # Une fois le calcul effectué, on désactive le bouton et on change l'affichage pour qu'il soit en vert
-            self.pb_indic_rc_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule'])
-            self.pb_indic_rc_all.setText('Représentations cartographiques\ncalculées')
-            self.pb_indic_rc_all.setEnabled(False)
+            self.pb_var_all.setStyleSheet(self.ressources.css_bt_calcul_indic['calcule'])
+            self.pb_var_all.setText('Calculs effectués')
+            self.pb_var_all.setEnabled(False)
 
             # On lance la mise à jour de l'arborescence des indicateurs
             self.mettre_a_jour_dispo_rep_carto_en_base()

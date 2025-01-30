@@ -59,8 +59,10 @@ BEGIN
 	RAISE NOTICE 'Correction des éventuelles géométries invalides après import depuis le plugin';
 	RAISE NOTICE 'Début du traitement : %', heure1;
 
+
+
 	EXECUTE '		
-		UPDATE c_phenomenes.zq SET geom = ST_MAKEVALID(geom)
+		UPDATE c_phenomenes.zq SET geom = ST_Multi(ST_Simplify(ST_CollectionExtract(ST_ForceCollection(ST_MakeValid(geom)),3),0))
 		WHERE __util_to_snake_case(territoire) = '''||__util_to_snake_case(nom_ter)||''' 
 			AND __util_to_snake_case(type_alea) = '''||__util_to_snake_case(typ_alea)||'''
 			AND __util_to_snake_case(code_occurrence) = '''||__util_to_snake_case(code_occ)||'''

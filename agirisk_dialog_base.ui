@@ -1484,37 +1484,14 @@ margin-top:1px</string>
                <x>780</x>
                <y>50</y>
                <width>291</width>
-               <height>28</height>
+               <height>71</height>
               </rect>
              </property>
              <property name="text">
-              <string>Lancer calcul des variables</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="pb_indic_all">
-             <property name="geometry">
-              <rect>
-               <x>780</x>
-               <y>90</y>
-               <width>291</width>
-               <height>28</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>Lancer calcul des indicateurs</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="pb_indic_rc_all">
-             <property name="geometry">
-              <rect>
-               <x>780</x>
-               <y>130</y>
-               <width>291</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>Calcul des représentations 
+              <string>Lancer le calcul des :
+- variables
+- indicateurs
+- représentations
 cartographiques</string>
              </property>
             </widget>
