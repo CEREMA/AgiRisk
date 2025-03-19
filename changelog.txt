@@ -31,3 +31,7 @@ Changelog:
 - [hotfix 30.01.2025]
     Correction de l'import de couche d'aléa qui posait problème lors de correction de géométries invalides
     Fusion des boutons de calculs des variables, indicateurs et représentations cartographiques
+
+- [hotfix 19.03.2025]
+    Fix calcul des coûts de dommages agricoles lors d'une nouvelle exécution
+    Ajout d'un seuil de visibilité pour l'affichage des diagrammes circulaires du dashboard

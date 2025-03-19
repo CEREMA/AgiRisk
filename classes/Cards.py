@@ -185,9 +185,16 @@ class Camembert(QWidget):
 
     def update_in_out(self, pct_in, pct_out):
         '''Calcul des angles des tranches de camembert avant tracé en fonction des valeurs'''
-        angle_zi = (pct_in * 360)
-        angle_hors_zi = (pct_out * 360)
-        i = 1
+        # On ajoute une condition pour que la largeur de la tranche soit visible si pct_in est strictement supérieur à 0
+        # Concrètement, on impose un angle minimum de 2° pour la tranche ZI
+        if pct_in > 0:
+            angle_zi = max(pct_in * 360, 2)
+            angle_hors_zi = 360 - angle_zi
+            i = 1
+        else:
+            angle_zi = 0
+            angle_hors_zi = 360
+            i = 1
         # précédente couleur verte : QColor(176, 204, 78)
         # remplacée par : QColor(239, 119, 87) - gris de code #bdbaba
         self.pies = [{"couleur": QColor(41, 37, 116), "angle_deb": math.floor(ang * (angle_zi / i)), "angle_val": math.ceil((angle_zi / i))} for ang in range(i)]

@@ -203,7 +203,11 @@ BEGIN
 				ELSE h_eau_min
 			END
 		FROM zq
-		WHERE ST_Intersects(s2_6a.geomloc,zq.geom)';
+		WHERE ST_Intersects(s2_6a.geomloc,zq.geom)
+			AND __util_to_snake_case(s2_6a.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zq.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zq.type_alea) IN (''' ||__util_to_snake_case(typ_alea) || ''')
+			AND __util_to_snake_case(zq.code_occurrence) IN (''' ||__util_to_snake_case(code_occ) || ''')';
 	RAISE NOTICE 'Affectation des hauteurs d''eau maximum en un point du polygone selon le niveau d''aléa';
 	EXECUTE 'UPDATE p_indicateurs.s2_6a
 		SET h_eau_max =
@@ -215,7 +219,11 @@ BEGIN
 				ELSE h_eau_max
 			END
 		FROM zq
-		WHERE ST_Intersects(s2_6a.geomloc,zq.geom)';
+		WHERE ST_Intersects(s2_6a.geomloc,zq.geom)
+			AND __util_to_snake_case(s2_6a.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zq.territoire) = ''' ||__util_to_snake_case(nom_ter) || '''
+			AND __util_to_snake_case(zq.type_alea) IN (''' ||__util_to_snake_case(typ_alea) || ''')
+			AND __util_to_snake_case(zq.code_occurrence) IN (''' ||__util_to_snake_case(code_occ) || ''')';
 	
 	ELSE RAISE NOTICE 'Aucune couche Zh ou Zq n''est disponible pour le territoire "%" et l''aléa "% - %" dans le schéma c_phenomenes. Fin de l''exécution', nom_ter, typ_alea, code_occ;
 	END IF;
